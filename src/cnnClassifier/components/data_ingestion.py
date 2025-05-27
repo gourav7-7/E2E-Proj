@@ -40,7 +40,9 @@ class DataIngestion:
         Func returns None
         '''
 
-        unzip_path = self.config.unzip_dir
+
+        unzip_path = self.config.unzip_dir  # Now points to artifacts/data_ingestion/kidney-ct-scan-image
         os.makedirs(unzip_path, exist_ok=True)
+    
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
-            zip_ref.extractall(unzip_path)
+            zip_ref.extractall(unzip_path)  # Extracts directly into kidney-ct-scan-image/
