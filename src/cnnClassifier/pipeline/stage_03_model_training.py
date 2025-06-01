@@ -1,8 +1,25 @@
+# stage_03_model_training.py
+from dotenv import load_dotenv
+import os
+
+# 1. Load environment variables FIRST
+load_dotenv()  # Loads from .env file in project root
+
+# 2. Initialize MLflow/DagsHub connection
+import mlflow
+import dagshub
+
+dagshub.init(
+    repo_owner="gourav7-7", 
+    repo_name="E2E-Proj", 
+    mlflow=True
+)
+mlflow.set_tracking_uri(os.environ['MLFLOW_TRACKING_URI'])
+
+# 3. Now import other project modules
 from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.training_data import Training
 from cnnClassifier import logger
-
-
 
 
 STAGE_NAME = "Model Training Stage"

@@ -1,2 +1,40 @@
 artifacts/
 research/
+# User-specific
+artifacts/
+research/
+penv.env
+
+# Python
+__pycache__/
+*.py[cod]
+.python-version
+
+# Environments
+venv/
+.env/
+.venv/
+env/
+*.env
+
+# Packaging
+dist/
+build/
+*.egg-info/
+
+# Logs
+logs/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# System
+.DS_Store
+Thumbs.db
+
+# ML/DVC
+mlruns/
+.dvc/tmp

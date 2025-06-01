@@ -5,6 +5,8 @@ import tensorflow as tf
 import time
 from pathlib import Path
 from cnnClassifier.entity.config_entity import TrainingConfig
+from mlflow.models.signature import infer_signature
+import numpy as np
 
 
 class Training:
@@ -12,7 +14,13 @@ class Training:
         self.config = config
 
     
+    # def get_base_model(self):
+    #     self.model = tf.keras.models.load_model(
+    #         self.config.updated_base_model_path
+    #     )
+
     def get_base_model(self):
+        # Load custom CNN instead of VGG
         self.model = tf.keras.models.load_model(
             self.config.updated_base_model_path
         )
@@ -65,7 +73,15 @@ class Training:
     
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
-        model.save(path)
+    # Create example input
+        input_shape = model.input_shape[1:]  # Skip batch dimension
+        input_example = np.random.rand(1, *input_shape).astype(np.float32)
+    
+    # Infer signature
+        signature = infer_signature(input_example, model.predict(input_example))
+    
+    # Save model with signature
+        model.save(path, signatures=signature)
 
 
 

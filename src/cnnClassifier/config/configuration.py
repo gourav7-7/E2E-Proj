@@ -4,7 +4,7 @@ from cnnClassifier.utils.common import read_yaml, create_directories
 from cnnClassifier.entity.config_entity import DataIngestionConfig
 from cnnClassifier.entity.config_entity import PrepareBaseModelConfig
 from cnnClassifier.entity.config_entity import TrainingConfig
-
+from cnnClassifier.entity.config_entity import EvaluationConfig
 
 class ConfigurationManager:
     def __init__(
@@ -40,22 +40,35 @@ class ConfigurationManager:
     
 
 
+    # def get_prepare_base_model_config(self) -> PrepareBaseModelConfig:
+    #     config = self.config.prepare_base_model
+
+    #     create_directories([config.root_dir])
+
+    #     prepare_base_model_config = PrepareBaseModelConfig(
+    #         root_dir= Path(config.root_dir),
+    #         base_model_path= Path(config.base_model_path),
+    #         updated_base_model_path= Path(config.updated_base_model_path),
+    #         params_image_size=self.params.IMAGE_SIZE,
+    #         params_learning_rate=self.params.LEARNING_RATE,
+    #         params_include_top=self.params.INCLUDE_TOP,
+    #         params_weights=self.params.WEIGHTS,
+    #         params_classes=self.params.CLASSES
+    #     )
+
+    #     return prepare_base_model_config
+
     def get_prepare_base_model_config(self) -> PrepareBaseModelConfig:
         config = self.config.prepare_base_model
-
-        create_directories([config.root_dir])
-
+    
         prepare_base_model_config = PrepareBaseModelConfig(
-            root_dir= Path(config.root_dir),
-            base_model_path= Path(config.base_model_path),
-            updated_base_model_path= Path(config.updated_base_model_path),
+            root_dir=Path(config.root_dir),
+            base_model_path=Path(config.base_model_path),
+            updated_base_model_path=Path(config.updated_base_model_path),
             params_image_size=self.params.IMAGE_SIZE,
             params_learning_rate=self.params.LEARNING_RATE,
-            params_include_top=self.params.INCLUDE_TOP,
-            params_weights=self.params.WEIGHTS,
-            params_classes=self.params.CLASSES
+            params_classes=self.params.CLASSES  # Add this
         )
-
         return prepare_base_model_config
     
 
@@ -79,5 +92,16 @@ class ConfigurationManager:
             params_is_augmentation=params.AUGMENTATION,
             params_image_size=params.IMAGE_SIZE
         )
-
         return training_config
+    
+
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/kidney-ct-scan-image",
+            mlflow_uri="https://dagshub.com/gourav7-7/E2E-Proj.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config

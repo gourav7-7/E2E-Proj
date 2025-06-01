@@ -851,3 +851,588 @@ X=========================================================X]
 [2025-05-24 19:41:59,964: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
 
 X=========================================================X]
+[2025-05-27 22:52:17,701: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-05-27 22:52:17,718: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-27 22:52:17,724: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-27 22:52:17,733: INFO: common: created directory at: artifacts]
+[2025-05-27 22:52:17,733: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-27 22:52:20,013: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-27 22:52:20,442: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-27 22:52:20,442: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-27 22:52:20,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-27 22:52:20,447: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-27 22:52:20,447: INFO: common: created directory at: artifacts]
+[2025-05-27 22:52:20,449: INFO: common: created directory at: artifacts\training]
+[2025-05-27 23:01:02,387: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-05-27 23:01:02,400: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-27 23:01:02,414: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-27 23:01:02,415: INFO: common: created directory at: artifacts]
+[2025-05-27 23:01:02,416: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-27 23:01:04,913: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-27 23:01:05,464: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-27 23:01:05,464: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-27 23:01:05,470: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-27 23:01:05,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-27 23:01:05,474: INFO: common: created directory at: artifacts]
+[2025-05-27 23:01:05,476: INFO: common: created directory at: artifacts\training]
+[2025-05-27 23:07:00,007: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-05-27 23:07:00,009: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-27 23:07:00,021: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-27 23:07:00,023: INFO: common: created directory at: artifacts]
+[2025-05-27 23:07:00,023: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-27 23:07:00,943: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-27 23:07:01,240: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-27 23:07:01,240: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-27 23:07:01,242: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-27 23:07:01,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-27 23:07:01,244: INFO: common: created directory at: artifacts]
+[2025-05-27 23:07:01,244: INFO: common: created directory at: artifacts\training]
+[2025-05-27 23:36:29,069: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-05-27 23:36:29,083: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-27 23:36:29,095: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-27 23:36:29,096: INFO: common: created directory at: artifacts]
+[2025-05-27 23:36:29,097: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-05-27 23:36:30,953: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-27 23:36:31,522: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-27 23:36:31,522: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-27 23:36:31,524: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-27 23:36:31,526: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-27 23:36:31,526: INFO: common: created directory at: artifacts]
+[2025-05-27 23:36:31,527: INFO: common: created directory at: artifacts\training]
+[2025-05-28 00:27:20,811: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-28 00:27:20,811: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 00:27:20,813: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 00:27:20,815: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 00:27:20,816: INFO: common: created directory at: artifacts]
+[2025-05-28 00:27:20,818: ERROR: main: No file or directory found at aretifacts/training/model.h5]
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 47, in <module>
+    model_eval.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_04_model_eval.py", line 18, in main
+    evaluation.evaluation()
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 47, in evaluation
+    self.model = self.load_model(self.config.path_of_model)
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 43, in load_model
+    return tf.keras.models.load_model(path)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\saving\save.py", line 226, in load_model
+    raise IOError(
+OSError: No file or directory found at aretifacts/training/model.h5
+[2025-05-28 00:29:46,171: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 00:29:46,175: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 00:29:46,177: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 00:29:46,177: INFO: common: created directory at: artifacts]
+[2025-05-28 00:29:46,178: ERROR: main: No file or directory found at aretifacts/training/model.h5]
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 47, in <module>
+    model_eval.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_04_model_eval.py", line 18, in main
+    evaluation.evaluation()
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 47, in evaluation
+    self.model = self.load_model(self.config.path_of_model)
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 43, in load_model
+    return tf.keras.models.load_model(path)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\saving\save.py", line 226, in load_model
+    raise IOError(
+OSError: No file or directory found at aretifacts/training/model.h5
+[2025-05-28 00:33:53,550: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 00:33:53,552: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 00:33:53,554: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 00:33:53,554: INFO: common: created directory at: artifacts]
+[2025-05-28 00:33:54,594: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/kideny-ct-scaan-image']
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 47, in <module>
+    model_eval.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_04_model_eval.py", line 18, in main
+    evaluation.evaluation()
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 48, in evaluation
+    self._valid_generator()
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 33, in _valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\preprocessing\image.py", line 1650, in flow_from_directory
+    return DirectoryIterator(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/kideny-ct-scaan-image'
+[2025-05-28 00:35:13,673: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 00:35:13,675: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 00:35:13,676: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 00:35:13,677: INFO: common: created directory at: artifacts]
+[2025-05-28 00:35:14,773: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/kideny-ct-scan-image']
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 47, in <module>
+    model_eval.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_04_model_eval.py", line 18, in main
+    evaluation.evaluation()
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 48, in evaluation
+    self._valid_generator()
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 33, in _valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\preprocessing\image.py", line 1650, in flow_from_directory
+    return DirectoryIterator(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion/kideny-ct-scan-image'
+[2025-05-28 00:35:57,066: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 00:35:57,069: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 00:35:57,070: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 00:35:57,071: INFO: common: created directory at: artifacts]
+[2025-05-28 00:37:31,625: INFO: common: json file saved at: scores.json]
+[2025-05-28 00:37:31,626: INFO: common: json file saved at: scores.json]
+[2025-05-28 00:37:31,626: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-28 19:18:34,112: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 19:18:34,112: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 19:18:34,126: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 19:18:34,126: INFO: common: created directory at: artifacts]
+[2025-05-28 19:20:01,094: INFO: common: json file saved at: scores.json]
+[2025-05-28 19:20:01,094: INFO: common: json file saved at: scores.json]
+[2025-05-28 19:20:01,094: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-28 19:25:11,070: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 19:25:11,082: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 19:25:11,084: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 19:25:11,085: INFO: common: created directory at: artifacts]
+[2025-05-28 19:26:40,068: INFO: stage_04_model_eval: *******************]
+[2025-05-28 19:26:40,069: INFO: stage_04_model_eval: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-05-28 19:26:40,071: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 19:26:40,072: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 19:26:40,073: INFO: common: created directory at: artifacts]
+[2025-05-28 19:28:42,277: INFO: common: json file saved at: scores.json]
+[2025-05-28 19:28:42,278: INFO: common: json file saved at: scores.json]
+[2025-05-28 19:28:44,373: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-05-28 19:28:45,272: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmpgj1jd1sr\model\data\model\assets]
+[2025-05-28 19:29:05,066: INFO: stage_04_model_eval: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-05-28 19:42:45,697: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 19:42:45,697: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 19:42:45,713: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 19:42:45,713: INFO: common: created directory at: artifacts]
+[2025-05-28 19:44:09,094: INFO: common: json file saved at: scores.json]
+[2025-05-28 19:44:09,094: INFO: common: json file saved at: scores.json]
+[2025-05-28 19:44:10,487: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-05-28 19:44:11,709: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmplrbu9ozy\model\data\model\assets]
+[2025-05-28 19:44:21,334: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-28 19:45:59,228: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-28 19:45:59,228: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-28 19:45:59,244: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-28 19:45:59,244: INFO: common: created directory at: artifacts]
+[2025-05-28 19:47:26,370: INFO: common: json file saved at: scores.json]
+[2025-05-28 19:47:26,370: INFO: common: json file saved at: scores.json]
+[2025-05-28 19:47:27,746: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-05-28 19:47:28,537: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmp2bs9cyzd\model\data\model\assets]
+[2025-05-28 19:47:37,459: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-30 00:51:44,162: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-30 00:51:44,179: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-30 00:51:44,184: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-30 00:51:44,198: INFO: common: created directory at: artifacts]
+[2025-05-30 00:53:10,093: INFO: common: json file saved at: scores.json]
+[2025-05-30 00:53:10,098: INFO: common: json file saved at: scores.json]
+[2025-05-30 00:53:11,921: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-05-30 00:53:12,858: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmprar07pty\model\data\model\assets]
+[2025-05-30 00:53:26,730: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 14:42:57,880: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-31 14:42:57,883: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 14:42:57,886: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 14:42:57,887: INFO: common: created directory at: artifacts]
+[2025-05-31 14:44:40,307: INFO: common: json file saved at: scores.json]
+[2025-05-31 14:44:40,309: INFO: common: json file saved at: scores.json]
+[2025-05-31 14:44:42,545: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-05-31 14:44:43,317: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmpqt2gnzvu\model\data\model\assets]
+[2025-05-31 14:44:55,570: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 17:01:23,070: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 401 Unauthorized"]
+[2025-05-31 17:02:51,535: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"]
+[2025-05-31 17:02:52,017: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"]
+[2025-05-31 17:02:52,487: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 17:02:52,498: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 17:02:53,014: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 17:02:53,464: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 17:02:53,466: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 17:02:53,466: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 17:02:53,475: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-31 17:02:53,475: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 17:02:53,486: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 17:02:53,489: INFO: common: created directory at: artifacts]
+[2025-05-31 17:04:26,165: INFO: common: json file saved at: scores.json]
+[2025-05-31 17:04:26,165: INFO: common: json file saved at: scores.json]
+[2025-05-31 17:04:29,956: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-05-31 17:04:30,686: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmpg07_35s5\model\data\model\assets]
+[2025-05-31 17:05:52,515: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 17:17:08,457: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 17:17:08,463: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 17:17:08,985: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 17:17:09,423: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 17:17:09,429: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 17:17:09,433: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 17:17:09,441: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-31 17:17:09,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 17:17:09,449: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 17:17:09,451: INFO: common: created directory at: artifacts]
+[2025-05-31 17:18:53,133: INFO: common: json file saved at: scores.json]
+[2025-05-31 17:18:53,134: INFO: common: json file saved at: scores.json]
+[2025-05-31 17:18:55,915: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 13). These functions will not be directly callable after loading.]
+[2025-05-31 17:18:56,708: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmpsbqh9b3o\model\data\model\assets]
+[2025-05-31 17:20:14,218: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 17:25:48,807: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 17:25:48,815: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 17:25:49,317: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 17:25:49,806: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 17:25:49,811: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 17:25:49,814: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 17:25:49,819: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-31 17:25:49,826: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 17:25:49,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 17:25:49,832: INFO: common: created directory at: artifacts]
+[2025-05-31 17:25:49,833: INFO: common: created directory at: artifacts\training]
+[2025-05-31 20:49:28,491: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 20:49:28,491: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 20:49:28,945: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 20:49:29,446: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 20:49:29,446: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 20:49:29,446: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 20:49:29,466: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-05-31 20:49:29,469: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 20:49:29,470: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 20:49:29,471: INFO: common: created directory at: artifacts]
+[2025-05-31 20:49:31,639: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-31 20:49:31,724: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-31 20:49:31,780: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 20:49:31,780: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-31 20:49:31,783: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 20:49:31,785: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 20:49:31,785: INFO: common: created directory at: artifacts]
+[2025-05-31 20:49:31,786: INFO: common: created directory at: artifacts\training]
+[2025-05-31 20:49:31,786: ERROR: main: "'ConfigBox' object has no attribute 'epochs'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'EPOCHS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'EPOCHS'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'EPOCHS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'EPOCHS'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'epochs'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'epochs'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'epochs'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 35, in <module>
+    training_model.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_03_model_training.py", line 32, in main
+    training_config = config.get_training_config()
+  File "d:\e2e proj\src\cnnClassifier\config\configuration.py", line 90, in get_training_config
+    params_epochs=params.EPOCHS,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'epochs'"
+[2025-05-31 20:54:57,663: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 20:54:57,672: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 20:54:58,082: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 20:54:58,455: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 20:54:58,455: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 20:54:58,455: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 20:54:58,460: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-05-31 20:54:58,464: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 20:54:58,465: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 20:54:58,466: INFO: common: created directory at: artifacts]
+[2025-05-31 20:54:59,585: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-31 20:54:59,656: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-05-31 20:54:59,759: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 20:54:59,761: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-31 20:54:59,763: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 20:54:59,763: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 20:54:59,763: INFO: common: created directory at: artifacts]
+[2025-05-31 20:54:59,763: INFO: common: created directory at: artifacts\training]
+[2025-05-31 20:54:59,971: WARNING: hdf5_format: No training configuration found in the save file, so the model was *not* compiled. Compile it manually.]
+[2025-05-31 20:55:00,577: ERROR: main: You must compile your model before training/testing. Use `model.compile(optimizer, loss)`.]
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 35, in <module>
+    training_model.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_03_model_training.py", line 36, in main
+    training.train()
+  File "d:\e2e proj\src\cnnClassifier\components\training_data.py", line 93, in train
+    self.model.fit(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 3618, in _assert_compile_was_called
+    raise RuntimeError(
+RuntimeError: You must compile your model before training/testing. Use `model.compile(optimizer, loss)`.
+[2025-05-31 21:11:28,222: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 21:11:28,222: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 21:11:28,641: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 21:11:29,035: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 21:11:29,045: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 21:11:29,045: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 21:11:29,053: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-05-31 21:11:29,057: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 21:11:29,060: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 21:11:29,061: INFO: common: created directory at: artifacts]
+[2025-05-31 21:11:30,175: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 21:11:30,175: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-31 21:11:30,175: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 21:11:30,175: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 21:11:30,179: INFO: common: created directory at: artifacts]
+[2025-05-31 21:11:30,179: INFO: common: created directory at: artifacts\training]
+[2025-05-31 21:39:48,681: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 21:39:48,681: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-31 21:39:48,685: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 21:39:48,687: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 21:39:48,687: INFO: common: created directory at: artifacts]
+[2025-05-31 21:40:12,315: INFO: common: json file saved at: scores.json]
+[2025-05-31 21:40:12,315: INFO: common: json file saved at: scores.json]
+[2025-05-31 21:40:15,048: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 4 of 4). These functions will not be directly callable after loading.]
+[2025-05-31 21:40:15,485: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmp38y0lrj9\model\data\model\assets]
+[2025-05-31 21:40:53,902: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 22:15:58,256: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 22:15:58,269: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 22:15:58,868: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 22:15:59,483: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 22:15:59,484: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 22:15:59,492: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 22:15:59,492: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-05-31 22:15:59,497: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 22:15:59,500: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 22:15:59,501: INFO: common: created directory at: artifacts]
+[2025-05-31 22:16:00,699: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 22:16:00,699: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-31 22:16:00,699: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 22:16:00,713: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 22:16:00,713: INFO: common: created directory at: artifacts]
+[2025-05-31 22:16:00,713: INFO: common: created directory at: artifacts\training]
+[2025-05-31 23:02:40,704: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 23:02:40,704: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-05-31 23:02:40,704: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 23:02:40,704: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 23:02:40,704: INFO: common: created directory at: artifacts]
+[2025-05-31 23:03:00,138: INFO: common: json file saved at: scores.json]
+[2025-05-31 23:03:00,138: INFO: common: json file saved at: scores.json]
+[2025-05-31 23:03:02,459: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 4 of 4). These functions will not be directly callable after loading.]
+[2025-05-31 23:03:02,820: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmp5sof22ez\model\data\model\assets]
+[2025-05-31 23:03:44,321: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-05-31 23:04:15,501: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 23:04:15,513: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 23:04:16,181: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 23:04:16,869: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 23:04:16,879: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 23:04:16,880: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 23:04:16,885: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-31 23:04:16,888: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 23:04:16,889: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 23:04:16,889: INFO: common: created directory at: artifacts]
+[2025-05-31 23:04:16,890: INFO: common: created directory at: artifacts\training]
+[2025-05-31 23:06:43,185: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 23:06:43,197: INFO: helpers: Accessing as gourav7-7]
+[2025-05-31 23:06:44,416: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-05-31 23:06:45,234: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-05-31 23:06:45,241: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-05-31 23:06:45,241: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-05-31 23:06:45,241: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-05-31 23:06:45,248: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-31 23:06:45,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-31 23:06:45,248: INFO: common: created directory at: artifacts]
+[2025-05-31 23:06:45,248: INFO: common: created directory at: artifacts\training]
+[2025-06-01 00:11:29,091: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-01 00:11:29,097: INFO: helpers: Accessing as gourav7-7]
+[2025-06-01 00:11:29,533: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-06-01 00:11:29,907: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-01 00:11:29,917: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-06-01 00:11:29,920: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-06-01 00:11:29,929: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-06-01 00:11:29,931: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 00:11:29,933: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 00:11:29,934: INFO: common: created directory at: artifacts]
+[2025-06-01 00:11:30,886: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 00:11:30,886: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-06-01 00:11:30,886: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 00:11:30,886: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 00:11:30,886: INFO: common: created directory at: artifacts]
+[2025-06-01 00:11:30,886: INFO: common: created directory at: artifacts\training]
+[2025-06-01 00:42:42,001: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 00:42:42,001: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-06-01 00:42:42,001: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 00:42:42,001: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 00:42:42,011: INFO: common: created directory at: artifacts]
+[2025-06-01 00:43:04,976: INFO: common: json file saved at: scores.json]
+[2025-06-01 00:43:04,977: INFO: common: json file saved at: scores.json]
+[2025-06-01 00:43:07,571: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 3 of 3). These functions will not be directly callable after loading.]
+[2025-06-01 00:43:08,046: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmpxq43s7xs\model\data\model\assets]
+[2025-06-01 00:43:47,551: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 00:57:39,602: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-01 00:57:39,612: INFO: helpers: Accessing as gourav7-7]
+[2025-06-01 00:57:40,034: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-06-01 00:57:40,410: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-01 00:57:40,412: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-06-01 00:57:40,413: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-06-01 00:57:40,421: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-06-01 00:57:40,423: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 00:57:40,425: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 00:57:40,426: INFO: common: created directory at: artifacts]
+[2025-06-01 00:57:41,546: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 00:57:41,546: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-06-01 00:57:41,549: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 00:57:41,551: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 00:57:41,552: INFO: common: created directory at: artifacts]
+[2025-06-01 00:57:41,553: INFO: common: created directory at: artifacts\training]
+[2025-06-01 01:26:45,248: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 01:26:45,248: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-06-01 01:26:45,251: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 01:26:45,253: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 01:26:45,255: INFO: common: created directory at: artifacts]
+[2025-06-01 01:27:18,458: INFO: common: json file saved at: scores.json]
+[2025-06-01 01:27:18,460: INFO: common: json file saved at: scores.json]
+[2025-06-01 01:27:20,950: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 3 of 3). These functions will not be directly callable after loading.]
+[2025-06-01 01:27:21,545: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmputhjgjhr\model\data\model\assets]
+[2025-06-01 01:27:57,584: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 01:39:11,402: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-01 01:39:11,408: INFO: helpers: Accessing as gourav7-7]
+[2025-06-01 01:39:11,837: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-06-01 01:39:12,238: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-01 01:39:12,240: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-06-01 01:39:12,242: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-06-01 01:39:12,248: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-06-01 01:39:12,250: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 01:39:12,252: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 01:39:12,253: INFO: common: created directory at: artifacts]
+[2025-06-01 01:39:13,414: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 01:39:13,415: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-06-01 01:39:13,416: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 01:39:13,418: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 01:39:13,418: INFO: common: created directory at: artifacts]
+[2025-06-01 01:39:13,418: INFO: common: created directory at: artifacts\training]
+[2025-06-01 02:05:15,403: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 02:05:15,403: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-06-01 02:05:15,403: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 02:05:15,403: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 02:05:15,403: INFO: common: created directory at: artifacts]
+[2025-06-01 02:05:34,455: INFO: common: json file saved at: scores.json]
+[2025-06-01 02:05:34,455: INFO: common: json file saved at: scores.json]
+[2025-06-01 02:05:36,811: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 3 of 3). These functions will not be directly callable after loading.]
+[2025-06-01 02:05:37,251: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmpr1xgi2hq\model\data\model\assets]
+[2025-06-01 02:06:32,470: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 02:09:29,547: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-01 02:09:29,547: INFO: helpers: Accessing as gourav7-7]
+[2025-06-01 02:09:29,983: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-06-01 02:09:30,390: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-06-01 02:09:30,391: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-06-01 02:09:30,391: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-06-01 02:09:30,402: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-06-01 02:09:30,403: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 02:09:30,406: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 02:09:30,406: INFO: common: created directory at: artifacts]
+[2025-06-01 02:09:31,391: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 02:09:31,391: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-06-01 02:09:31,391: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 02:09:31,391: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 02:09:31,391: INFO: common: created directory at: artifacts]
+[2025-06-01 02:09:31,391: INFO: common: created directory at: artifacts\training]
+[2025-06-01 02:33:31,346: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-06-01 02:33:31,346: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-06-01 02:33:31,346: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 02:33:31,346: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 02:33:31,346: INFO: common: created directory at: artifacts]
+[2025-06-01 02:33:52,809: INFO: common: json file saved at: scores.json]
+[2025-06-01 02:33:52,809: INFO: common: json file saved at: scores.json]
+[2025-06-01 02:33:55,470: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 3 of 3). These functions will not be directly callable after loading.]
+[2025-06-01 02:33:55,946: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmplhp4vu_b\model\data\model\assets]
+[2025-06-01 02:34:48,352: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
