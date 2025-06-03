@@ -1,4 +1,5 @@
 import os
+import shutil
 # import urllib.request as req
 import zipfile
 import gdown
@@ -35,14 +36,58 @@ class DataIngestion:
 
     def extract_zip_file(self):
         '''
-        zip_file_path: str
-        Extracts the zip file into the data dire
-        Func returns None
+        Extracts and reorganizes the zip file to have a flat structure
         '''
-
-
-        unzip_path = self.config.unzip_dir  # Now points to artifacts/data_ingestion/kidney-ct-scan-image
+        unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok=True)
-    
+        
+        # 1. Extract to a temporary directory
+        temp_extract_dir = os.path.join(unzip_path, "temp_extract")
+        os.makedirs(temp_extract_dir, exist_ok=True)
+        
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
-            zip_ref.extractall(unzip_path)  # Extracts directly into kidney-ct-scan-image/
+            zip_ref.extractall(temp_extract_dir)
+        
+        # 2. Find the actual data directory (handles nested structure)
+        data_dir = self._find_data_directory(temp_extract_dir)
+        
+        if not data_dir:
+            raise FileNotFoundError("Could not find class directories in the extracted data")
+        
+        # 3. Move class directories to the main unzip_path
+        for class_name in os.listdir(data_dir):
+            class_src = os.path.join(data_dir, class_name)
+            class_dest = os.path.join(unzip_path, class_name)
+            
+            if os.path.isdir(class_src):
+                # Remove destination if exists
+                if os.path.exists(class_dest):
+                    shutil.rmtree(class_dest)
+                shutil.move(class_src, class_dest)
+                logger.info(f"Moved {class_name} to {class_dest}")
+        
+        # 4. Clean up temporary files
+        shutil.rmtree(temp_extract_dir)
+        logger.info("Cleaned up temporary extraction directory")
+    
+    def _find_data_directory(self, base_path):
+        """
+        Recursively searches for the directory containing class folders
+        """
+        # Look for directories that match our expected class names
+        expected_classes = {'Normal', 'Tumor', 'Stone', 'Cyst'}
+        
+        # Check current directory
+        if expected_classes.issubset(set(os.listdir(base_path))):
+            return base_path
+        
+        # Check subdirectories
+        for root, dirs, files in os.walk(base_path):
+            for dir_name in dirs:
+                dir_path = os.path.join(root, dir_name)
+                dir_contents = os.listdir(dir_path)
+                
+                if expected_classes.issubset(set(dir_contents)):
+                    return dir_path
+        
+        return None

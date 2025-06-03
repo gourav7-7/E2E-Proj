@@ -4,6 +4,7 @@ research/
 artifacts/
 research/
 penv.env
+dagshub t1 token.txt
 
 # Python
 __pycache__/

@@ -1436,3 +1436,103 @@ X=========================================================X]
 [2025-06-01 02:34:48,352: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
 
 X=========================================================X]
+[2025-06-01 10:13:27,508: INFO: stage_01_data_ingestion: >>>>>>>> stage Data Ingestion stage started here <<<<<<<<]
+[2025-06-01 10:13:27,510: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 10:13:27,515: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 10:13:27,515: INFO: common: created directory at: artifacts]
+[2025-06-01 10:13:27,515: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-01 10:13:27,516: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1zsI3e2QVpuhM1hjHMlr-8lx6os6X2UQF/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-06-01 10:16:20,902: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1zsI3e2QVpuhM1hjHMlr-8lx6os6X2UQF/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-06-01 10:16:40,235: INFO: stage_01_data_ingestion: >>>>>>>>> stage Data Ingestion stage completed <<<<<<<<<
+
+X=======================================================X]
+[2025-06-01 10:30:51,661: INFO: stage_01_data_ingestion: >>>>>>>> stage Data Ingestion stage started here <<<<<<<<]
+[2025-06-01 10:30:51,661: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 10:30:51,661: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 10:30:51,661: INFO: common: created directory at: artifacts]
+[2025-06-01 10:30:51,661: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-01 10:30:51,661: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1zsI3e2QVpuhM1hjHMlr-8lx6os6X2UQF/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-06-01 10:31:50,687: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1zsI3e2QVpuhM1hjHMlr-8lx6os6X2UQF/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-06-01 10:32:09,902: INFO: data_ingestion: Moved Cyst to artifacts/data_ingestion/kidney-ct-scan-image\Cyst]
+[2025-06-01 10:32:09,902: INFO: data_ingestion: Moved Normal to artifacts/data_ingestion/kidney-ct-scan-image\Normal]
+[2025-06-01 10:32:09,902: INFO: data_ingestion: Moved Stone to artifacts/data_ingestion/kidney-ct-scan-image\Stone]
+[2025-06-01 10:32:09,902: INFO: data_ingestion: Moved Tumor to artifacts/data_ingestion/kidney-ct-scan-image\Tumor]
+[2025-06-01 10:32:09,902: INFO: data_ingestion: Cleaned up temporary extraction directory]
+[2025-06-01 10:32:09,902: INFO: stage_01_data_ingestion: >>>>>>>>> stage Data Ingestion stage completed <<<<<<<<<
+
+X=======================================================X]
+[2025-06-01 10:35:34,425: INFO: stage_02_model_preparation: >>>>>>>> stage Model Preparation Stage started here <<<<<<<<]
+[2025-06-01 10:35:34,433: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 10:35:34,433: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 10:35:34,433: INFO: common: created directory at: artifacts]
+[2025-06-01 10:35:37,050: INFO: stage_02_model_preparation: >>>>>>>>> stage Model Preparation Stage completed <<<<<<<<<
+
+X=======================================================X]
+[2025-06-01 10:35:46,861: INFO: stage_03_model_training: >>>>>>>> stage Model Training Stage started here <<<<<<<<]
+[2025-06-01 10:35:46,861: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 10:35:46,861: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 10:35:46,861: INFO: common: created directory at: artifacts]
+[2025-06-01 10:35:46,861: INFO: common: created directory at: artifacts\training]
+[2025-06-01 11:10:09,127: INFO: stage_03_model_training: >>>>>>>>> stage Model Training Stage completed <<<<<<<<<
+
+X=======================================================X]
+[2025-06-01 11:10:22,237: INFO: stage_04_model_eval: *******************]
+[2025-06-01 11:10:22,238: INFO: stage_04_model_eval: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-06-01 11:10:22,240: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-06-01 11:10:22,242: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-01 11:10:22,242: INFO: common: created directory at: artifacts]
+[2025-06-01 11:10:48,080: INFO: common: json file saved at: scores.json]
+[2025-06-01 11:10:48,082: INFO: common: json file saved at: scores.json]
+[2025-06-01 11:10:48,994: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 3 of 3). These functions will not be directly callable after loading.]
+[2025-06-01 11:10:49,790: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmposa2gns2\model\data\model\assets]
+[2025-06-01 11:11:03,108: INFO: stage_04_model_eval: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-06-01 11:53:41,597: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.224.106.194:8080]
+[2025-06-01 11:53:41,597: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-01 11:53:51,066: ERROR: _internal: 10.224.106.194 - - [01/Jun/2025 11:53:51] code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÊÊ\x00\x00\x00#\x00\x00\x00')]
+[2025-06-01 11:53:51,067: INFO: _internal: 10.224.106.194 - - [01/Jun/2025 11:53:51] "[35m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03Û\x83zPý\x1f1E>\x92 }\x9f\x85,¾@\x92\x04\x97\x11ìÐ9\x099P¼cå\x92ê ,Àh&}µ5gô\x8cV¥T\x02\x95\x02\x92ÃÈOu[ôõï\x85BÐ\x92³óÓ\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÊÊ\x00\x00\x00#\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -]
+[2025-06-01 11:53:51,070: ERROR: _internal: 10.224.106.194 - - [01/Jun/2025 11:53:51] code 400, message Bad request version ("Ø\x7fP\x86³ñ´\x1aº\x1an¶d¼=ª¹¢`ÿÐ'!")]
+[2025-06-01 11:53:51,070: INFO: _internal: 10.224.106.194 - - [01/Jun/2025 11:53:51] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03á\x88á¸ßÏÅT>\x84»é\x0cN\x93>\x89Øõ}¸6`eZ\x93<\x91üÜï× Ø\x7fP\x86³ñ´\x1aº\x1an¶d¼=ª¹¢`ÿÐ'![0m" HTTPStatus.BAD_REQUEST -]
+[2025-06-01 11:53:53,308: INFO: _internal: 10.224.106.194 - - [01/Jun/2025 11:53:53] "GET / HTTP/1.1" 200 -]
+[2025-06-01 11:54:15,896: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "d:\E2E Proj\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\prediction.py", line 12, in predict
+    model = load_model(os.path.join("artifacrs", "training", "model.h5"))
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\saving\save.py", line 226, in load_model
+    raise IOError(
+OSError: No file or directory found at artifacrs\training\model.h5
+[2025-06-01 11:54:15,903: INFO: _internal: 10.224.106.194 - - [01/Jun/2025 11:54:15] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-06-01 11:58:03,106: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.224.106.194:8080]
+[2025-06-01 11:58:03,106: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-01 11:58:08,122: INFO: _internal: 10.224.106.194 - - [01/Jun/2025 11:58:08] "GET / HTTP/1.1" 200 -]
+[2025-06-01 11:58:21,291: INFO: _internal: 10.224.106.194 - - [01/Jun/2025 11:58:21] "POST /predict HTTP/1.1" 200 -]
+[2025-06-02 23:07:49,349: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.224.106.194:8080]
+[2025-06-02 23:07:49,349: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-02 23:07:56,161: INFO: _internal: 10.224.106.194 - - [02/Jun/2025 23:07:56] "GET / HTTP/1.1" 200 -]
+[2025-06-02 23:07:57,235: INFO: _internal: 10.224.106.194 - - [02/Jun/2025 23:07:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
