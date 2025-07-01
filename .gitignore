@@ -39,3 +39,7 @@ Thumbs.db
 # ML/DVC
 mlruns/
 .dvc/tmp
+
+*.jpg
+*.img
+*.png

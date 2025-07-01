@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -482,10 +482,10 @@
         $("#loading").show();
         
         // For this demo, we'll simulate the prediction
-        simulatePrediction();
+        /*simulatePrediction(); */
         
         // In a real implementation, you would use the following AJAX call:
-        /*
+        
         var url = $("#url").val();
         $.ajax({
             url: url,
@@ -501,7 +501,7 @@
                 $("#loading").hide();
             }
         });
-        */
+        
     }
 
     $(document).ready(function() {
@@ -557,6 +557,1434 @@
             }
         });
     });
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4-Class Object Classifier</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{background-color: #eff2f9;}
+        .iupload h3{color: #1b2d6b;font-size: 30px;font-weight: 700;}
+        .img-part{height:300px;width:300px;margin:0px auto;}
+        .image-part{height:300px;width:300px;border:1px solid #1b2d6b;}
+        .image-part img{position:absolute;height: 300px;width:300px;display:none;padding:5px;}
+        .image-part #video{display:block;height: 300px;width:300px;padding:5px;}
+        .res-part{border:1px solid #dedede;margin-left:20px;height: 310px;width:100%;padding:5px;margin:0px auto;overflow:auto;}
+        .res-part2{border:1px solid #dedede;height: 310px;width:100%;padding:5px;margin:0px auto;}
+        .resp-img{height: 298px;width: 233px;margin:0px auto;}
+        .jsonRes{margin-left:30px;}
+        #send{cursor:pointer;}
+        .btn-part{width:325px;}
+        textarea,
+        select,
+        .form-control,
+        .custom-select,
+        button.btn,
+        .btn-primary,
+        input[type="text"],
+        input[type="url"],
+        .uneditable-input{
+            border: 1px solid #363e75;
+            outline: 0 !important;
+            border-radius:0px;
+            box-shadow: none;
+           -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+           -moz-transition: none;
+           -webkit-transition: none;
+        }
+        textarea:focus,
+        select:focus,
+        .form-control:focus,
+        .btn:focus,
+        .btn-primary:focus,
+        .custom-select:focus,
+        input[type="text"]:focus,
+        .uneditable-input:focus{
+            border: 1px solid #007bff;
+            outline: 0 !important;
+            border-radius:0px;
+            box-shadow: none;
+           -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+           -moz-transition: none;
+           -webkit-transition: none;
+        }
+        #loading {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999999999;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #363e75;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            left: 50%;
+            margin-left: -4em;
+            display: block;
+            animation: spin 2s linear infinite;
+        }
+        .loader,
+        .loader:after {display: block;position: absolute;top: 50%;margin-top: -4.05em;}
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .right-part{border:1px solid #dedede;padding:5px;}
+        .logo{position:absolute;right:0px;bottom:0px;margin-right:30px;margin-bottom:30px;}
+        .class-bar {
+            height: 20px;
+            background-color: #e0e0e0;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .class-progress {
+            height: 100%;
+            background-color: #1b2d6b;
+            color: white;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main container">
+        <section class="iupload">
+            <h3 class="text-center py-4">4-Class Object Classification</h3>
+            <div class="row">
+                <div class="img-part col-md-6">
+                    <div class="image-part">
+                        <video autoplay id="video" poster="https://img.freepik.com/free-vector/group-young-people-posing-photo_52683-18824.jpg?size=338&ext=jpg"></video>
+                        <img src="" id="photo">
+                        <canvas style="display:none;" id="canvas"></canvas>
+                    </div>
+                    <div class="btn-part">
+                        <form id="upload-data pt-3" class="">
+                            <div class="input-group mt-3 row">
+                                <button type="button" class="btn btn-primary col-md-5 col-xs-5 ml-3 mr-4" id="uload">Upload</button>
+                                <button id="send" type="button" class="btn btn-success col-md-5 col-xs-5">Predict</button>
+                            </div>
+                            <input type="hidden" class="form-control mr-2" id="url" placeholder="Enter REST Api url..." value="../predict"/>
+                            <input name="upload" type="file" id="fileinput" style="position:absolute;top:-500px;"/><br/>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 right-part">
+                    <h5 class="mb-2"><center>Prediction Results</center></h5>
+                    <div class="row">
+                        <div class="res-part2 col-md-5 col-xs-12"></div>
+                        <div class="res-part col-md-5 col-xs-12">
+                            <div class="jsonRes">
+                                <div id="class-results"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAAAlCAMAAABBJDpuAAAAVFBMVEX/fgD/iQA7NzIyMjMnNYInNYEnNYInNYEzMzInNYQnNYETJzsnNYIwN1wxMjNoTis4O1YrNm0xOF47PE9DP0dEQEVpTVkAJJ4nNYEOLJHJbiAzMzOmmmHRAAAAFnRSTlOh/vu+986oen9fP2UqEzQkFAIDAAEEILVBJQAAA3FJREFUWMPNmO2WoyAMQG0VBARtdVRs3/89NwkgaF1rd2aOm18tIrnkgwSz7n+R7LcV1ELkeS7E7VySRlyfQXJhTiO55c+liP4cEuH1X8E7gaV+S3Jv2zYZ/Vr+/Sdx2vP6doc/fSPcf/GOpLSFVXFUW8t+giRP47TOd60yk1hbxIhSP0ACKPWrvw7YBIT/lcQY84G3Wk17ugWQfg5UsQJpjflKSLQi7xTWyk0SXTJ4VnB5D1yccxmp4Z+mX5KGNS+SPXVNll0ulyxL0wYmloBB6zL/MpCoAgjAJiUM6w0SboMwPUdRogvNKcNM3smFdRvEcJJkKcflQa+X0pNIfBGW0zKqjyQtw4VLKQlI7ZLgdrRNSZDjMQx2GB4pCkxkCrfGWUTJ0Egan6muCHgJCUwtnCk0mrJ9Q8K5LUqtdSfynkAedhynaRqngVDaXLiJEAzkFkM71IuIlWRYtSQpbXSZDvQ7JPCei9brs+oaABkn74LRIkpFaVxGnzjvIxTYREOoEwn5r01JTDRTcO87Eu3zNUeTPKZpjrIRrNIDCjzALbPk7LJMIokOEQu2K7yKQAKvFDF9pVe0R+LGb7h1MMkw2ijjA/1zhSfSphvEAChXJEhAqwYStIJWXnTpvbdH4hTUwSQ2JRmQpILDLYbB7J41SYiLcNozu5Z3JMo7RxBJahI7WSRByCMkqJt9hySESbVJcvmARJGFExJmdBSl2oM2+T4JLWfgaGFptizlPUm1FydHSdyZ7UnS4ySph2kS0kJrkvr5NJg7dnrJnfxgxPozRPGtkyPNOxtaiDvbIAF9L+5B5zTI2BwlwXmM+U3zReav3o0F8oUEFFZ42McDZYomOUziFmezgWyo251Uc1nyKJol7UTCEnIYUEbHYaEGQi9C9egwCdVfHwiaajfjKMUcHcRacCylhWJbJDfq47EEDhYqoIWjHnwDXZPpPiChPQelLU+Cbm4w50FmYgkvFwpiWwCC/Um/SLcNElOC9RVj6qWpCiEMvRUK4zLpdKmPw8rVldy/qxjn60wLrVLWJIPLiZJRr3fsvnOHPvare+lB93tb37T20D82jqOt+zNuXhuNvNhp7X+PpHb3rvV9R5xjE2SpyCN9ffQO+GtWIZr5Xnytz4gTMIRYfys47/uJEXny/aQ/95tSUwmU+uRvSp/IHzQqZYpYrQmxAAAAAElFTkSuQmCC" />
+
+
+    <div id="loading"><div class="loader"></div></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+    var mybtn = document.getElementById('startbtn');
+    var myvideo = document.getElementById('video');
+    var mycanvas = document.getElementById('canvas');
+    var myphoto = document.getElementById('photo');
+    var base_data = "";
+
+    function displayClassResults(results) {
+        var html = '<h6>Class Probabilities:</h6>';
+        for (var className in results) {
+            if (results.hasOwnProperty(className)) {
+                var percentage = (results[className] * 100).toFixed(2);
+                html += '<div class="mt-2">' + className + '</div>';
+                html += '<div class="class-bar">';
+                html += '<div class="class-progress" style="width: ' + percentage + '%">' + percentage + '%</div>';
+                html += '</div>';
+            }
+        }
+        $("#class-results").html(html);
+    }
+
+    function sendRequest(base64Data) {
+        if (base64Data === "") {
+            alert("Please upload an image first.");
+            return;
+        }
+
+        var url = $("#url").val();
+        $("#loading").show();
+        
+        $.ajax({
+            url: url,
+            type: "post",
+            cache: false,
+            async: true,
+            crossDomain: true,
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            data: JSON.stringify({ image: base64Data }),
+            success: function(res) {
+                $(".res-part2").html("");
+                try {
+                    // Display processed image if available
+                    if (res.image && res.image.length > 100) {
+                        $(".res-part2").append("<img class='resp-img' src='data:image/jpeg;base64," + res.image + "' alt='Processed Image' />");
+                    }
+                } catch(e) {}
+
+                // Display class prediction results
+                if (res.predictions) {
+                    displayClassResults(res.predictions);
+                } else {
+                    $("#class-results").html("<p>No predictions found</p>");
+                }
+                $("#loading").hide();
+            },
+            error: function(xhr, status, error) {
+                $("#loading").hide();
+                $("#class-results").html("<p>Error: " + error + "</p>");
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        $("#loading").hide();
+
+        $('#send').click(function(evt) {
+            sendRequest(base_data);
+        });
+
+        $('#uload').click(function(evt) {
+            $('#fileinput').focus().trigger('click');
+        });
+
+        $("#fileinput").change(function() {
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var url = e.target.result;
+                    var img = new Image();
+                    img.crossOrigin = 'Anonymous';
+                    img.onload = function() {
+                        var canvas = document.createElement('CANVAS');
+                        var ctx = canvas.getContext('2d');
+                        canvas.height = this.height;
+                        canvas.width = this.width;
+                        ctx.drawImage(this, 0, 0);
+                        base_data = canvas.toDataURL('image/jpeg', 1.0).replace(/^data:image.+;base64,/, '');
+                        canvas = null;
+                    };
+                    img.src = url;
+                    $('#photo').attr('src', url);
+                    $('#photo').show();
+                    $('#video').hide();
+                }
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+    });
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney CT Scan Classifier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1b2d6b;
+            --secondary: #4e73df;
+            --light: #f8f9fc;
+            --dark: #2e3a59;
+            --success: #1cc88a;
+            --warning: #f6c23e;
+            --danger: #e74a3b;
+            --info: #36b9cc;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #eff2f9 0%, #e6e9f0 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, var(--primary) 0%, #0d1b4d 100%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 25px;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 15px 20px;
+            font-weight: 600;
+        }
+        
+        .image-container {
+            height: 300px;
+            border: 2px dashed var(--primary);
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .image-container img, 
+        .image-container video {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .placeholder-text {
+            color: #6c757d;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border: none;
+            border-radius: 30px;
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(78, 115, 223, 0.4);
+        }
+        
+        .btn-success {
+            background: linear-gradient(135deg, var(--success) 0%, #17a673 100%);
+            border: none;
+            border-radius: 30px;
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(28, 200, 138, 0.4);
+        }
+        
+        .btn-warning {
+            background: linear-gradient(135deg, var(--warning) 0%, #dda20a 100%);
+            border: none;
+            border-radius: 30px;
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-warning:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(246, 194, 62, 0.4);
+        }
+        
+        .class-bar {
+            height: 25px;
+            background-color: #e0e0e0;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .class-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 15px;
+            border-radius: 12px;
+            transition: width 0.5s ease;
+        }
+        
+        .class-label {
+            position: absolute;
+            left: 15px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .result-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .prediction-badge {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+        }
+        
+        .progress {
+            height: 25px;
+            border-radius: 12px;
+        }
+        
+        .progress-bar {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .spinner {
+            width: 70px;
+            height: 70px;
+            border: 7px solid rgba(27, 45, 107, 0.2);
+            border-top: 7px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .status-badge {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .status-idle {
+            background-color: #e2e3e5;
+            color: #383d41;
+        }
+        
+        .status-running {
+            background-color: #cce5ff;
+            color: #004085;
+        }
+        
+        .status-completed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .status-failed {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .model-stats {
+            background: linear-gradient(135deg, #f8f9fc 0%, #e9ecef 100%);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, var(--primary) 0%, #0d1b4d 100%);
+            color: white;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 5px 15px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 768px) {
+            .btn-block-sm {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-kidneys me-2"></i>
+                <span class="fw-bold">Kidney CT Scan Classifier</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-info-circle me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-book me-1"></i> Documentation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container my-4">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold text-gradient">Kidney CT Scan Classification</h1>
+            <p class="lead text-muted">Upload a kidney CT scan image to classify it into one of four categories</p>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-upload me-2"></i>Upload CT Scan Image
+                    </div>
+                    <div class="card-body">
+                        <div class="image-container mb-4">
+                            <div class="placeholder-text">
+                                <i class="fas fa-cloud-upload-alt fa-3x mb-3 text-primary"></i>
+                                <p>No image selected</p>
+                                <p class="small">Click "Upload Image" or drag & drop a CT scan image here</p>
+                            </div>
+                            <img id="previewImage" src="" style="display: none; max-width: 100%; max-height: 100%;">
+                            <video id="videoPlaceholder" autoplay style="display: none;"></video>
+                        </div>
+                        
+                        <div class="d-grid gap-3">
+                            <input type="file" id="fileInput" accept="image/*" class="d-none">
+                            <button class="btn btn-primary" id="uploadBtn">
+                                <i class="fas fa-folder-open me-2"></i>Upload Image
+                            </button>
+                            <button class="btn btn-success" id="predictBtn">
+                                <i class="fas fa-brain me-2"></i>Classify Image
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-cogs me-2"></i>Model Training Control
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">Training Status:</h6>
+                                <span id="statusBadge" class="status-badge status-idle">IDLE</span>
+                            </div>
+                            <div class="progress mb-2">
+                                <div id="trainingProgress" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <small id="stageLabel">Not started</small>
+                                <small id="progressText">0%</small>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-warning" id="startTrainingBtn">
+                                <i class="fas fa-play me-2"></i>Start Training
+                            </button>
+                            <button class="btn btn-secondary" id="resetTrainingBtn" disabled>
+                                <i class="fas fa-sync me-2"></i>Reset Training
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-lg-6 mb-4">
+               
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-bar me-2"></i>Classification Results
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center mb-4">
+                            <h5>Prediction:</h5>
+                            <div id="predictionResult" class="d-flex justify-content-center">
+                                <span class="prediction-badge bg-light text-dark">No result yet</span>
+                            </div>
+                        </div>
+                        
+                        <h6 class="mb-3">Class Probabilities:</h6>
+                        <div id="classResults">
+                            <div class="class-bar">
+                                <span class="class-label">Cyst</span>
+                                <div class="class-progress" style="width: 0%">0%</div>
+                            </div>
+                            <div class="class-bar">
+                                <span class="class-label">Normal</span>
+                                <div class="class-progress" style="width: 0%">0%</div>
+                            </div>
+                            <div class="class-bar">
+                                <span class="class-label">Stone</span>
+                                <div class="class-progress" style="width: 0%">0%</div>
+                            </div>
+                            <div class="class-bar">
+                                <span class="class-label">Tumor</span>
+                                <div class="class-progress" style="width: 0%">0%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 model-stats">
+                            <div class="row text-center">
+                                <div class="col-6 mb-3">
+                                    <div class="stat-value" id="processingTime">--</div>
+                                    <div class="stat-label">Processing Time</div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="stat-value" id="modelAccuracy">94.7%</div>
+                                    <div class="stat-label">Model Accuracy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-info-circle me-2"></i>Model Information
+                    </div>
+                    <div class="card-body">
+                        <p>This deep learning model classifies kidney CT scans into four categories:</p>
+                        <ul>
+                            <li><strong>Cyst:</strong> Fluid-filled sacs in the kidneys</li>
+                            <li><strong>Normal:</strong> Healthy kidney tissue</li>
+                            <li><strong>Stone:</strong> Kidney stones (nephrolithiasis)</li>
+                            <li><strong>Tumor:</strong> Abnormal growths in kidney tissue</li>
+                        </ul>
+                        <div class="alert alert-info">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            The model uses a custom CNN architecture with 3 convolutional layers and achieves 94.7% accuracy on validation data.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="loading" style="display: none;">
+        <div class="spinner"></div>
+        <h4 class="mt-4 text-primary">Processing...</h4>
+        <p class="text-muted">Please wait while we analyze your CT scan</p>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5>Kidney CT Scan Classifier</h5>
+                    <p class="mb-0">A deep learning solution for automated classification of kidney conditions from CT scans.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="mb-2">
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">DVC</span>
+                        <span class="tech-badge">MLflow</span>
+                        <span class="tech-badge">Bootstrap</span>
+                    </div>
+                    <p class="mb-0">&copy; 2023 Medical AI Solutions. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // DOM Elements
+        const fileInput = document.getElementById('fileInput');
+        const uploadBtn = document.getElementById('uploadBtn');
+        const predictBtn = document.getElementById('predictBtn');
+        const previewImage = document.getElementById('previewImage');
+        const placeholderText = document.querySelector('.placeholder-text');
+        const videoPlaceholder = document.getElementById('videoPlaceholder');
+        const loadingOverlay = document.getElementById('loading');
+        const predictionResult = document.getElementById('predictionResult');
+        const classProgressBars = document.querySelectorAll('.class-progress');
+        const classLabels = document.querySelectorAll('.class-label');
+        const processingTime = document.getElementById('processingTime');
+        
+        // Training elements
+        const startTrainingBtn = document.getElementById('startTrainingBtn');
+        const resetTrainingBtn = document.getElementById('resetTrainingBtn');
+        const trainingProgress = document.getElementById('trainingProgress');
+        const progressText = document.getElementById('progressText');
+        const stageLabel = document.getElementById('stageLabel');
+        const statusBadge = document.getElementById('statusBadge');
+        
+        // Global variables
+        let imageData = null;
+        let trainingInterval = null;
+        
+        // Upload button click handler
+        uploadBtn.addEventListener('click', () => {
+            fileInput.click();
+        });
+        
+        // File input change handler
+        fileInput.addEventListener('change', function(e) {
+            if (this.files && this.files[0]) {
+                const file = this.files[0];
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    // Show image preview
+                    previewImage.src = e.target.result;
+                    previewImage.style.display = 'block';
+                    placeholderText.style.display = 'none';
+                    videoPlaceholder.style.display = 'none';
+                    
+                    // Store base64 data
+                    imageData = e.target.result.split(',')[1];
+                }
+                
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        // Predict button click handler
+        predictBtn.addEventListener('click', () => {
+            if (!imageData) {
+                showAlert('Please upload an image first!', 'warning');
+                return;
+            }
+            
+            // Show loading overlay
+            loadingOverlay.style.display = 'flex';
+            
+            // Simulate API call
+            setTimeout(() => {
+                // Hide loading
+                loadingOverlay.style.display = 'none';
+                
+                // Generate random results for demo
+                const classes = ['Cyst', 'Normal', 'Stone', 'Tumor'];
+                const predictedClass = classes[Math.floor(Math.random() * classes.length)];
+                const probabilities = {
+                    'Cyst': Math.random(),
+                    'Normal': Math.random(),
+                    'Stone': Math.random(),
+                    'Tumor': Math.random()
+                };
+                
+                // Normalize probabilities to sum to 1
+                const total = Object.values(probabilities).reduce((a, b) => a + b, 0);
+                for (let key in probabilities) {
+                    probabilities[key] = probabilities[key] / total;
+                }
+                
+                // Display results
+                displayResults(predictedClass, probabilities);
+            }, 2000);
+        });
+        
+        // Display prediction results
+        function displayResults(predictedClass, probabilities) {
+            // Update prediction result
+            predictionResult.innerHTML = `<span class="prediction-badge bg-primary">${predictedClass}</span>`;
+            
+            // Update progress bars
+            classLabels.forEach((label, index) => {
+                const className = label.textContent;
+                const percentage = (probabilities[className] * 100).toFixed(1);
+                classProgressBars[index].style.width = `${percentage}%`;
+                classProgressBars[index].textContent = `${percentage}%`;
+            });
+            
+            // Update processing time
+            processingTime.textContent = `${(Math.random() * 500 + 200).toFixed(0)}ms`;
+        }
+        
+        // Training status simulation
+        const trainingStages = [
+            { name: "Data Ingestion", progress: 20 },
+            { name: "Model Preparation", progress: 40 },
+            { name: "Model Training", progress: 70 },
+            { name: "Model Evaluation", progress: 100 }
+        ];
+        
+        // Start training button handler
+        startTrainingBtn.addEventListener('click', () => {
+            if (statusBadge.classList.contains('status-running')) {
+                showAlert('Training is already in progress!', 'info');
+                return;
+            }
+            
+            // Update UI
+            statusBadge.className = 'status-badge status-running';
+            statusBadge.textContent = 'RUNNING';
+            startTrainingBtn.disabled = true;
+            resetTrainingBtn.disabled = true;
+            
+            // Reset progress
+            trainingProgress.style.width = '0%';
+            progressText.textContent = '0%';
+            stageLabel.textContent = 'Initializing...';
+            
+            // Simulate training progress
+            let currentStage = 0;
+            let progress = 0;
+            
+            trainingInterval = setInterval(() => {
+                if (currentStage >= trainingStages.length) {
+                    // Training completed
+                    clearInterval(trainingInterval);
+                    statusBadge.className = 'status-badge status-completed';
+                    statusBadge.textContent = 'COMPLETED';
+                    startTrainingBtn.disabled = false;
+                    resetTrainingBtn.disabled = false;
+                    stageLabel.textContent = 'Training completed!';
+                    return;
+                }
+                
+                // Update progress
+                progress += 0.5;
+                if (progress > trainingStages[currentStage].progress) {
+                    currentStage++;
+                    if (currentStage < trainingStages.length) {
+                        stageLabel.textContent = trainingStages[currentStage].name;
+                    }
+                    return;
+                }
+                
+                // Update UI
+                trainingProgress.style.width = `${progress}%`;
+                progressText.textContent = `${Math.round(progress)}%`;
+                
+                if (currentStage < trainingStages.length) {
+                    stageLabel.textContent = trainingStages[currentStage].name;
+                }
+            }, 50);
+        });
+        
+        // Reset training button handler
+        resetTrainingBtn.addEventListener('click', () => {
+            clearInterval(trainingInterval);
+            statusBadge.className = 'status-badge status-idle';
+            statusBadge.textContent = 'IDLE';
+            trainingProgress.style.width = '0%';
+            progressText.textContent = '0%';
+            stageLabel.textContent = 'Ready to start';
+            startTrainingBtn.disabled = false;
+            resetTrainingBtn.disabled = true;
+        });
+        
+        // Show alert function
+        function showAlert(message, type) {
+            // Create alert element
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type} alert-dismissible fade show`;
+            alert.role = 'alert';
+            alert.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            
+            // Add to page
+            document.querySelector('.container').prepend(alert);
+            
+            // Auto remove after 3 seconds
+            setTimeout(() => {
+                alert.classList.remove('show');
+                setTimeout(() => alert.remove(), 150);
+            }, 3000);
+        }
+        
+        // Initialize with a demo image
+        window.addEventListener('load', () => {
+            previewImage.src = 'https://images.unsplash.com/photo-1581595219319-5b4b57cb88c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80';
+            previewImage.style.display = 'block';
+            placeholderText.style.display = 'none';
+            imageData = "demo_image_data";
+            
+            // Show welcome alert
+            setTimeout(() => {
+                showAlert('Welcome to Kidney CT Scan Classifier! Try uploading an image or click "Classify Image" to see a demo.', 'info');
+            }, 1000);
+        });
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney CT Scan Classifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary: #1a6dcc;
+            --primary-dark: #0d4a9e;
+            --cyst: #c62828;
+            --normal: #2e7d32;
+            --stone: #ef6c00;
+            --tumor: #1565c0;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #343a40;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 2.5rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border: none;
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .upload-container {
+            background-color: white;
+            padding: 2.5rem;
+        }
+        
+        .preview-container {
+            display: none;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        #imagePreview {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border: 2px solid #e9ecef;
+        }
+        
+        .result-container {
+            display: none;
+            background-color: white;
+            padding: 2.5rem;
+        }
+        
+        .class-label {
+            font-weight: bold;
+            padding: 0.75rem 1.25rem;
+            border-radius: 30px;
+            margin: 0.75rem;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cyst { background-color: rgba(198, 40, 40, 0.1); color: var(--cyst); }
+        .normal { background-color: rgba(46, 125, 50, 0.1); color: var(--normal); }
+        .stone { background-color: rgba(239, 108, 0, 0.1); color: var(--stone); }
+        .tumor { background-color: rgba(21, 101, 192, 0.1); color: var(--tumor); }
+        
+        .predicted-class {
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+        
+        .cyst-bg { background-color: rgba(198, 40, 40, 0.15); }
+        .normal-bg { background-color: rgba(46, 125, 50, 0.15); }
+        .stone-bg { background-color: rgba(239, 108, 0, 0.15); }
+        .tumor-bg { background-color: rgba(21, 101, 192, 0.15); }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+            50% { transform: scale(1.03); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); }
+            100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+        }
+        
+        .progress {
+            height: 28px;
+            border-radius: 14px;
+            background-color: #e9ecef;
+            margin: 1.5rem 0;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .progress-bar {
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: width 1s ease-in-out;
+        }
+        
+        .footer {
+            background-color: #e9ecef;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .upload-btn {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border: none;
+            padding: 0.9rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(26, 109, 204, 0.3);
+        }
+        
+        .upload-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(26, 109, 204, 0.4);
+        }
+        
+        .upload-btn:active {
+            transform: translateY(-1px);
+        }
+        
+        .model-info {
+            background-color: rgba(21, 101, 192, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2rem;
+        }
+        
+        .probability-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #dee2e6;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+        
+        .probability-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3"><i class="bi bi-heart-pulse me-2"></i>Kidney CT Scan Classifier</h1>
+            <p class="lead mb-0">AI-powered diagnostic tool for detecting kidney abnormalities</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Model Info -->
+        <div class="model-info">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h5><i class="bi bi-diagram-3 me-2"></i>Custom CNN Model</h5>
+                    <p class="mb-0">Trained on kidney CT scans to detect Cysts, Stones, Tumors, and Normal kidneys</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <div class="d-inline-block bg-white p-2 rounded shadow-sm">
+                        <span class="badge bg-primary">Input: 224×224px</span>
+                        <span class="badge bg-success">Classes: 4</span>
+                        <span class="badge bg-info">CNN Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="card upload-container">
+            <div class="card-body">
+                <h3 class="text-center mb-4"><i class="bi bi-cloud-arrow-up me-2"></i>Upload Kidney CT Scan</h3>
+                <p class="text-center text-muted mb-4">Supported formats: JPG, PNG (Recommended size: 224×224 pixels)</p>
+                
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="mb-4">
+                        <div class="input-group">
+                            <input type="file" class="form-control form-control-lg" id="imageUpload" accept="image/*" required>
+                            <button class="btn btn-outline-secondary" type="button" id="clearBtn">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                        <div class="form-text">Select a kidney CT scan image for analysis</div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg upload-btn" id="analyzeBtn">
+                            <i class="bi bi-search-heart me-2"></i>Analyze Image
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Preview Section -->
+        <div class="preview-container" id="previewContainer">
+            <h4 class="mb-3"><i class="bi bi-image me-2"></i>Image Preview</h4>
+            <img id="imagePreview" src="#" alt="Preview" class="img-fluid">
+        </div>
+
+        <!-- Results Section -->
+        <div class="card result-container" id="resultContainer">
+            <div class="card-body">
+                <h3 class="text-center mb-4"><i class="bi bi-clipboard2-pulse me-2"></i>Analysis Results</h3>
+                
+                <div class="text-center mb-5">
+                    <h5 class="mb-3">Predicted Condition:</h5>
+                    <div id="predictionResult" class="predicted-class"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h5 class="mb-4 text-center">Probability Distribution</h5>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-bold cyst">Cyst</span>
+                                <span class="fw-bold" id="cystProb">0%</span>
+                            </div>
+                            <div class="probability-bar">
+                                <div id="cystBar" class="probability-fill" style="width: 0%; background-color: var(--cyst);"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-bold normal">Normal</span>
+                                <span class="fw-bold" id="normalProb">0%</span>
+                            </div>
+                            <div class="probability-bar">
+                                <div id="normalBar" class="probability-fill" style="width: 0%; background-color: var(--normal);"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-bold stone">Stone</span>
+                                <span class="fw-bold" id="stoneProb">0%</span>
+                            </div>
+                            <div class="probability-bar">
+                                <div id="stoneBar" class="probability-fill" style="width: 0%; background-color: var(--stone);"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-bold tumor">Tumor</span>
+                                <span class="fw-bold" id="tumorProb">0%</span>
+                            </div>
+                            <div class="probability-bar">
+                                <div id="tumorBar" class="probability-fill" style="width: 0%; background-color: var(--tumor);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <h5 class="mb-4 text-center">Confidence Level</h5>
+                        <div class="text-center">
+                            <div class="display-4 fw-bold mb-3" id="confidenceValue">0%</div>
+                            <div class="progress">
+                                <div id="confidenceBar" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-muted">The confidence level indicates how certain the model is about this prediction. Higher values indicate greater confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <button class="btn btn-outline-primary" id="newAnalysisBtn">
+                        <i class="bi bi-arrow-repeat me-2"></i>Perform New Analysis
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="mt-5 mb-5">
+            <h3 class="text-center mb-4"><i class="bi bi-lightning-charge me-2"></i>How Our Classifier Works</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="display-3 text-primary mb-3">1</div>
+                            <h5>Image Upload</h5>
+                            <p>Upload a clear CT scan image of the kidney area</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="display-3 text-primary mb-3">2</div>
+                            <h5>AI Processing</h5>
+                            <p>Our custom CNN analyzes the image features</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="display-3 text-primary mb-3">3</div>
+                            <h5>Pattern Recognition</h5>
+                            <p>The model identifies abnormalities based on learned patterns</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="display-3 text-primary mb-3">4</div>
+                            <h5>Diagnostic Result</h5>
+                            <p>Receive a detailed report with confidence metrics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p class="mb-2"><strong>Kidney CT Scan Classifier</strong> | Medical AI Diagnostic Tool</p>
+            <p class="mb-0 text-danger"><i class="bi bi-exclamation-triangle me-1"></i>For research purposes only | Consult a qualified medical professional for diagnosis</p>
+            <p class="mt-2 mb-0 text-muted small">Model Version: Custom CNN v1.0 | Input Size: 224×224px</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Preview uploaded image
+            $('#imageUpload').change(function(e) {
+                if (this.files && this.files[0]) {
+                    var reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        $('#imagePreview').attr('src', e.target.result);
+                        $('#previewContainer').show();
+                        $('#clearBtn').show();
+                    }
+                    
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+            
+            // Clear file selection
+            $('#clearBtn').click(function() {
+                $('#imageUpload').val('');
+                $('#previewContainer').hide();
+                $(this).hide();
+            }).hide();
+            
+            // Handle form submission
+            $('#uploadForm').submit(function(e) {
+                e.preventDefault();
+                
+                // Validate file
+                if (!$('#imageUpload')[0].files[0]) {
+                    alert('Please select an image first');
+                    return;
+                }
+                
+                var formData = new FormData();
+                formData.append('file', $('#imageUpload')[0].files[0]);
+                
+                // Show loading state
+                var originalBtnText = $('#analyzeBtn').html();
+                $('#analyzeBtn').html('<span class="spinner-border spinner-border-sm me-2" role="status"></span> Processing...').prop('disabled', true);
+                
+                // Send AJAX request
+                $.ajax({
+                    type: 'POST',
+                    url: '/predict',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(response) {
+                        // Process prediction response
+                        const prediction = response.prediction;
+                        const probabilities = response.probabilities;
+                        
+                        // Update UI with results
+                        $('#predictionResult')
+                            .text(prediction)
+                            .addClass(prediction.toLowerCase() + '-bg');
+                        
+                        // Update probabilities
+                        updateProbability('cyst', probabilities.Cyst);
+                        updateProbability('normal', probabilities.Normal);
+                        updateProbability('stone', probabilities.Stone);
+                        updateProbability('tumor', probabilities.Tumor);
+                        
+                        // Update confidence meter
+                        const confidence = probabilities[prediction];
+                        $('#confidenceValue').text(confidence + '%');
+                        $('#confidenceBar')
+                            .css('width', confidence + '%')
+                            .text(confidence + '%')
+                            .removeClass('bg-danger bg-warning bg-success')
+                            .addClass(getConfidenceClass(confidence));
+                        
+                        // Show result container
+                        $('#resultContainer').show();
+                        
+                        // Scroll to results
+                        $('html, body').animate({
+                            scrollTop: $('#resultContainer').offset().top - 100
+                        }, 800);
+                        
+                        // Reset button
+                        $('#analyzeBtn').html(originalBtnText).prop('disabled', false);
+                    },
+                    error: function(xhr) {
+                        let errorMsg = 'Error processing image';
+                        if (xhr.responseJSON && xhr.responseJSON.error) {
+                            errorMsg = xhr.responseJSON.error;
+                        }
+                        alert(errorMsg);
+                        $('#analyzeBtn').html(originalBtnText).prop('disabled', false);
+                    }
+                });
+            });
+            
+            // New analysis button
+            $('#newAnalysisBtn').click(function() {
+                $('#imageUpload').val('');
+                $('#previewContainer').hide();
+                $('#clearBtn').hide();
+                $('#resultContainer').hide();
+                $('#predictionResult').removeClass('cyst-bg normal-bg stone-bg tumor-bg');
+                $('html, body').animate({scrollTop: 0}, 500);
+            });
+            
+            // Update probability display
+            function updateProbability(cls, value) {
+                $('#' + cls + 'Prob').text(value + '%');
+                $('#' + cls + 'Bar').css('width', value + '%');
+            }
+            
+            // Get confidence class based on value
+            function getConfidenceClass(value) {
+                if (value >= 80) return 'bg-success';
+                if (value >= 60) return 'bg-info';
+                if (value >= 40) return 'bg-primary';
+                if (value >= 20) return 'bg-warning';
+                return 'bg-danger';
+            }
+        });
     </script>
 </body>
 </html>
