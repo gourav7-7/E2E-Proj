@@ -40,13 +40,13 @@ except Exception as e:
 
 
 
-STAGE_NAME = "Model Evaluation"
-try:
-    logger.info(f">>>>>>>>>>>>>> Stage {STAGE_NAME} started <<<<<<<<<<<<<<")
-    model_eval = EvaluationPipeline()
-    model_eval.main()
-    logger.info(f">>>>>>>>>>>> Stage {STAGE_NAME} COMPLETED <<<<<<<<<\n\nX=========================================================X")
-except Exception as e:
-    logger.exception(e)
-    raise e
+# STAGE_NAME = "Model Evaluation"
+# try:
+#     logger.info(f">>>>>>>>>>>>>> Stage {STAGE_NAME} started <<<<<<<<<<<<<<")
+#     model_eval = EvaluationPipeline()
+#     model_eval.main()
+#     logger.info(f">>>>>>>>>>>> Stage {STAGE_NAME} COMPLETED <<<<<<<<<\n\nX=========================================================X")
+# except Exception as e:
+#     logger.exception(e)
+#     raise e
     

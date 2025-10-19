@@ -1805,3 +1805,1344 @@ X=========================================================X]
 [2025-06-12 00:38:55,001: INFO: common: created directory at: artifacts\training]
 [2025-06-12 00:38:56,345: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
 [2025-06-12 00:38:56,348: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-14 20:30:18,371: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 20:30:18,371: INFO: helpers: Accessing as gourav7-7]
+[2025-07-14 20:30:18,887: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-14 20:30:19,353: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 20:30:19,355: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-14 20:30:19,355: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-14 20:30:19,355: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-14 20:30:19,355: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 20:30:19,370: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 20:30:19,370: INFO: common: created directory at: artifacts]
+[2025-07-14 20:30:21,054: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-14 20:30:21,054: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-14 20:30:21,054: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 20:30:21,054: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 20:30:21,054: INFO: common: created directory at: artifacts]
+[2025-07-14 20:30:21,054: INFO: common: created directory at: artifacts\training]
+[2025-07-14 20:30:22,352: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-14 20:30:22,352: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-14 20:44:56,153: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 20:44:56,162: INFO: helpers: Accessing as gourav7-7]
+[2025-07-14 20:44:56,583: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-14 20:44:57,212: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 20:44:57,228: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-14 20:44:57,228: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-14 20:44:57,228: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-14 20:44:57,228: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 20:44:57,228: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 20:44:57,228: INFO: common: created directory at: artifacts]
+[2025-07-14 20:44:58,828: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-14 20:44:58,828: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-14 20:44:58,830: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 20:44:58,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 20:44:58,831: INFO: common: created directory at: artifacts]
+[2025-07-14 20:44:58,831: INFO: common: created directory at: artifacts\training]
+[2025-07-14 20:45:00,364: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-14 20:45:00,364: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-14 21:47:17,496: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-14 21:47:17,496: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-07-14 21:47:17,496: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 21:47:17,512: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 21:47:17,512: INFO: common: created directory at: artifacts]
+[2025-07-14 21:47:51,331: INFO: common: json file saved at: scores.json]
+[2025-07-14 21:47:51,331: INFO: common: json file saved at: scores.json]
+[2025-07-14 21:47:51,839: WARNING: connectionpool: Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E5DE0>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create]
+[2025-07-14 21:47:55,850: WARNING: connectionpool: Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E6290>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create]
+[2025-07-14 21:48:03,855: WARNING: connectionpool: Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E6740>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create]
+[2025-07-14 21:48:19,861: WARNING: connectionpool: Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E68C0>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create]
+[2025-07-14 21:48:51,868: WARNING: connectionpool: Retrying (Retry(total=0, connect=0, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E6620>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create]
+[2025-07-14 21:48:51,868: ERROR: main: API request to https://dagshub.com/gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create failed with exception HTTPSConnectionPool(host='dagshub.com', port=443): Max retries exceeded with url: /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E7C70>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)"))]
+Traceback (most recent call last):
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002A5451E7C70>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+  [Previous line repeated 2 more times]
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='dagshub.com', port=443): Max retries exceeded with url: /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E7C70>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\utils\rest_utils.py", line 167, in http_request
+    return _get_http_response_with_retries(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\utils\rest_utils.py", line 98, in _get_http_response_with_retries
+    return session.request(method, url, **kwargs)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='dagshub.com', port=443): Max retries exceeded with url: /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E7C70>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 47, in <module>
+    model_eval.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_04_model_eval.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "d:\e2e proj\src\cnnClassifier\components\model_eval.py", line 60, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\tracking\fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\tracking\client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 131, in create_run
+    return self.store.create_run(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\store\tracking\rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\utils\rest_utils.py", line 278, in call_endpoint
+    response = http_request(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\mlflow\utils\rest_utils.py", line 185, in http_request
+    raise MlflowException(f"API request to {url} failed with exception {e}")
+mlflow.exceptions.MlflowException: API request to https://dagshub.com/gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create failed with exception HTTPSConnectionPool(host='dagshub.com', port=443): Max retries exceeded with url: /gourav7-7/E2E-Proj.mlflow/api/2.0/mlflow/runs/create (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A5451E7C70>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-07-14 23:09:20,545: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:09:20,545: INFO: helpers: Accessing as gourav7-7]
+[2025-07-14 23:09:21,047: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-14 23:09:21,526: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:09:21,531: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-14 23:09:21,534: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-14 23:09:21,538: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-14 23:09:21,541: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:09:21,544: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:09:21,545: INFO: common: created directory at: artifacts]
+[2025-07-14 23:09:22,547: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-14 23:09:22,547: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-07-14 23:09:22,549: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:09:22,550: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:09:22,550: INFO: common: created directory at: artifacts]
+[2025-07-14 23:09:45,285: INFO: common: json file saved at: scores.json]
+[2025-07-14 23:09:45,285: INFO: common: json file saved at: scores.json]
+[2025-07-14 23:09:48,300: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 6). These functions will not be directly callable after loading.]
+[2025-07-14 23:09:48,916: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmpyjpoum1t\model\data\model\assets]
+[2025-07-14 23:10:11,041: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-14 23:47:28,969: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:47:28,969: INFO: helpers: Accessing as gourav7-7]
+[2025-07-14 23:47:29,494: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-14 23:47:30,043: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:47:30,059: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-14 23:47:30,063: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-14 23:47:30,068: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-14 23:47:30,071: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:47:30,072: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:47:30,073: INFO: common: created directory at: artifacts]
+[2025-07-14 23:47:30,841: ERROR: main: name 'tensorflow' is not defined]
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 24, in <module>
+    prepare_base_model.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_02_model_preparation.py", line 14, in main
+    base_model.get_base_model()
+  File "d:\e2e proj\src\cnnClassifier\components\cnn_model.py", line 80, in get_base_model
+    self.model = self._build_custom_cnn()
+  File "d:\e2e proj\src\cnnClassifier\components\cnn_model.py", line 201, in _build_custom_cnn
+    model.add(tf.keras.layers.Dense(128, activation='relu',kernel_regularizer=tensorflow.keras.regularizers.l2(0.03)))
+NameError: name 'tensorflow' is not defined
+[2025-07-14 23:48:07,461: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:48:07,461: INFO: helpers: Accessing as gourav7-7]
+[2025-07-14 23:48:08,058: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-14 23:48:08,536: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:48:08,556: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-14 23:48:08,557: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-14 23:48:08,560: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-14 23:48:08,561: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:48:08,564: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:48:08,564: INFO: common: created directory at: artifacts]
+[2025-07-14 23:48:09,392: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-14 23:48:09,393: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-14 23:48:09,395: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:48:09,396: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:48:09,397: INFO: common: created directory at: artifacts]
+[2025-07-14 23:48:09,397: INFO: common: created directory at: artifacts\training]
+[2025-07-14 23:48:10,104: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-14 23:48:10,104: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-14 23:48:10,404: ERROR: main: in user code:
+
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 1160, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 1146, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 1135, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 994, in train_step
+        loss = self.compute_loss(x, y, y_pred, sample_weight)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 1052, in compute_loss
+        return self.compiled_loss(
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\compile_utils.py", line 265, in __call__
+        loss_value = loss_obj(y_t, y_p, sample_weight=sw)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\losses.py", line 152, in __call__
+        losses = call_fn(y_true, y_pred)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\losses.py", line 272, in call  **
+        return ag_fn(y_true, y_pred, **self._fn_kwargs)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\losses.py", line 1990, in categorical_crossentropy
+        return backend.categorical_crossentropy(
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\backend.py", line 5529, in categorical_crossentropy
+        target.shape.assert_is_compatible_with(output.shape)
+
+    ValueError: Shapes (None, None) and (None, 56, 56, 4) are incompatible
+]
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 35, in <module>
+    training_model.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_03_model_training.py", line 36, in main
+    training.train()
+  File "d:\e2e proj\src\cnnClassifier\components\training_data.py", line 229, in train
+    self.model.fit(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Gourav\AppData\Local\Temp\__autograph_generated_file8sxqgb48.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 1160, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 1146, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 1135, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 994, in train_step
+        loss = self.compute_loss(x, y, y_pred, sample_weight)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\training.py", line 1052, in compute_loss
+        return self.compiled_loss(
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\engine\compile_utils.py", line 265, in __call__
+        loss_value = loss_obj(y_t, y_p, sample_weight=sw)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\losses.py", line 152, in __call__
+        losses = call_fn(y_true, y_pred)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\losses.py", line 272, in call  **
+        return ag_fn(y_true, y_pred, **self._fn_kwargs)
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\losses.py", line 1990, in categorical_crossentropy
+        return backend.categorical_crossentropy(
+    File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\backend.py", line 5529, in categorical_crossentropy
+        target.shape.assert_is_compatible_with(output.shape)
+
+    ValueError: Shapes (None, None) and (None, 56, 56, 4) are incompatible
+
+[2025-07-14 23:49:28,627: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:49:28,635: INFO: helpers: Accessing as gourav7-7]
+[2025-07-14 23:49:29,094: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-14 23:49:29,514: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:49:29,519: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-14 23:49:29,522: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-14 23:49:29,525: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-14 23:49:29,528: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:49:29,528: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:49:29,529: INFO: common: created directory at: artifacts]
+[2025-07-14 23:49:30,298: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-14 23:49:30,298: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-14 23:49:30,298: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:49:30,298: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:49:30,298: INFO: common: created directory at: artifacts]
+[2025-07-14 23:49:30,298: INFO: common: created directory at: artifacts\training]
+[2025-07-14 23:49:31,003: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-14 23:49:31,003: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-14 23:59:19,676: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:59:19,688: INFO: helpers: Accessing as gourav7-7]
+[2025-07-14 23:59:20,137: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-14 23:59:20,589: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-14 23:59:20,605: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-14 23:59:20,609: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-14 23:59:20,612: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-14 23:59:20,614: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:59:20,616: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:59:20,617: INFO: common: created directory at: artifacts]
+[2025-07-14 23:59:21,395: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-14 23:59:21,395: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-14 23:59:21,412: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-14 23:59:21,412: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-14 23:59:21,412: INFO: common: created directory at: artifacts]
+[2025-07-14 23:59:21,412: INFO: common: created directory at: artifacts\training]
+[2025-07-14 23:59:22,154: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-14 23:59:22,154: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-15 00:44:47,214: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-15 00:44:47,214: INFO: main: >>>>>>>>>>>>>> Stage Model Evaluation started <<<<<<<<<<<<<<]
+[2025-07-15 00:44:47,214: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-15 00:44:47,214: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-15 00:44:47,214: INFO: common: created directory at: artifacts]
+[2025-07-15 00:45:07,877: INFO: common: json file saved at: scores.json]
+[2025-07-15 00:45:07,877: INFO: common: json file saved at: scores.json]
+[2025-07-15 00:45:10,753: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 3 of 3). These functions will not be directly callable after loading.]
+[2025-07-15 00:45:11,207: INFO: builder_impl: Assets written to: C:\Users\Gourav\AppData\Local\Temp\tmp5hi3b67y\model\data\model\assets]
+[2025-07-15 00:45:30,434: INFO: main: >>>>>>>>>>>> Stage Model Evaluation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-21 19:54:36,905: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 19:54:36,905: INFO: helpers: Accessing as gourav7-7]
+[2025-07-21 19:54:37,333: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-21 19:54:37,806: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 19:54:37,806: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-21 19:54:37,816: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-21 19:54:37,827: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-21 19:54:37,828: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 19:54:37,831: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 19:54:37,832: INFO: common: created directory at: artifacts]
+[2025-07-21 19:54:41,631: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-21 19:54:41,631: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-21 19:54:41,631: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 19:54:41,631: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 19:54:41,631: INFO: common: created directory at: artifacts]
+[2025-07-21 19:54:41,631: INFO: common: created directory at: artifacts\training]
+[2025-07-21 19:54:44,182: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-21 19:54:44,198: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-21 20:28:54,609: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 20:28:54,622: INFO: helpers: Accessing as gourav7-7]
+[2025-07-21 20:28:55,121: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-21 20:28:55,558: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 20:28:55,574: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-21 20:28:55,580: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-21 20:28:55,582: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-21 20:28:55,583: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 20:28:55,583: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 20:28:55,583: INFO: common: created directory at: artifacts]
+[2025-07-21 20:28:57,275: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-21 20:28:57,275: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-21 20:28:57,275: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 20:28:57,290: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 20:28:57,291: INFO: common: created directory at: artifacts]
+[2025-07-21 20:28:57,291: INFO: common: created directory at: artifacts\training]
+[2025-07-21 20:28:57,983: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-21 20:28:57,999: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-21 21:11:46,509: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-21 21:13:12,535: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 21:13:12,535: INFO: helpers: Accessing as gourav7-7]
+[2025-07-21 21:13:13,162: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-21 21:13:13,656: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 21:13:13,660: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-21 21:13:13,664: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-21 21:13:13,666: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-21 21:13:13,669: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 21:13:13,672: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 21:13:13,673: INFO: common: created directory at: artifacts]
+[2025-07-21 21:13:15,393: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-21 21:13:15,393: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-21 21:13:15,393: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 21:13:15,393: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 21:13:15,393: INFO: common: created directory at: artifacts]
+[2025-07-21 21:13:15,393: INFO: common: created directory at: artifacts\training]
+[2025-07-21 21:13:16,147: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-21 21:13:16,147: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-21 22:33:05,584: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 22:33:05,600: INFO: helpers: Accessing as gourav7-7]
+[2025-07-21 22:33:06,292: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-21 22:33:06,942: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 22:33:06,946: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-21 22:33:06,946: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-21 22:33:06,946: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-21 22:33:06,954: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 22:33:06,956: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 22:33:06,957: INFO: common: created directory at: artifacts]
+[2025-07-21 22:33:08,802: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-21 22:33:08,802: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-21 22:33:08,804: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 22:33:08,805: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 22:33:08,806: INFO: common: created directory at: artifacts]
+[2025-07-21 22:33:08,806: INFO: common: created directory at: artifacts\training]
+[2025-07-21 22:33:09,525: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-21 22:33:09,525: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-21 23:21:55,719: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-21 23:22:50,476: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 23:22:50,486: INFO: helpers: Accessing as gourav7-7]
+[2025-07-21 23:22:50,934: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-21 23:22:51,320: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-21 23:22:51,328: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-21 23:22:51,336: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-21 23:22:51,340: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-21 23:22:51,341: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 23:22:51,341: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 23:22:51,345: INFO: common: created directory at: artifacts]
+[2025-07-21 23:22:53,113: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-21 23:22:53,113: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-21 23:22:53,113: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-21 23:22:53,113: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-21 23:22:53,113: INFO: common: created directory at: artifacts]
+[2025-07-21 23:22:53,113: INFO: common: created directory at: artifacts\training]
+[2025-07-21 23:22:53,837: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-21 23:22:53,837: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-22 00:55:38,882: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 19:21:52,707: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 19:21:52,707: INFO: helpers: Accessing as gourav7-7]
+[2025-07-22 19:21:53,160: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-22 19:21:53,802: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 19:21:53,817: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-22 19:21:53,822: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-22 19:21:53,829: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-22 19:21:53,833: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 19:21:53,837: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 19:21:53,838: INFO: common: created directory at: artifacts]
+[2025-07-22 19:21:56,737: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 19:21:56,738: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-22 19:21:56,739: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 19:21:56,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 19:21:56,742: INFO: common: created directory at: artifacts]
+[2025-07-22 19:21:56,742: INFO: common: created directory at: artifacts\training]
+[2025-07-22 19:21:57,466: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-22 19:21:57,466: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-22 20:21:06,482: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 20:21:57,151: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 20:21:57,160: INFO: helpers: Accessing as gourav7-7]
+[2025-07-22 20:21:57,855: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-22 20:21:58,886: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 20:21:58,893: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-22 20:21:58,896: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-22 20:21:58,899: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-22 20:21:58,902: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 20:21:58,903: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 20:21:58,904: INFO: common: created directory at: artifacts]
+[2025-07-22 20:22:00,643: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 20:22:00,643: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-22 20:22:00,645: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 20:22:00,646: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 20:22:00,646: INFO: common: created directory at: artifacts]
+[2025-07-22 20:22:00,647: INFO: common: created directory at: artifacts\training]
+[2025-07-22 20:22:01,386: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-22 20:22:01,386: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-22 21:02:16,245: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 21:02:16,245: INFO: helpers: Accessing as gourav7-7]
+[2025-07-22 21:02:16,887: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-22 21:02:17,294: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 21:02:17,294: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-22 21:02:17,312: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-22 21:02:17,313: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-22 21:02:17,316: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 21:02:17,316: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 21:02:17,316: INFO: common: created directory at: artifacts]
+[2025-07-22 21:02:19,239: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 21:02:19,240: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-22 21:02:19,242: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 21:02:19,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 21:02:19,243: INFO: common: created directory at: artifacts]
+[2025-07-22 21:02:19,244: INFO: common: created directory at: artifacts\training]
+[2025-07-22 21:02:19,990: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-22 21:02:19,990: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-22 21:09:33,945: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 21:09:33,951: INFO: helpers: Accessing as gourav7-7]
+[2025-07-22 21:09:34,511: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-22 21:09:34,954: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 21:09:34,954: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-22 21:09:34,954: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-22 21:09:34,969: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-22 21:09:34,973: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 21:09:34,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 21:09:34,975: INFO: common: created directory at: artifacts]
+[2025-07-22 21:09:36,975: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 21:09:36,976: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-22 21:09:36,977: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 21:09:36,979: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 21:09:36,979: INFO: common: created directory at: artifacts]
+[2025-07-22 21:09:36,980: INFO: common: created directory at: artifacts\training]
+[2025-07-22 21:09:37,713: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-22 21:09:37,713: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-22 21:56:54,554: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 23:27:19,870: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 23:27:19,886: INFO: helpers: Accessing as gourav7-7]
+[2025-07-22 23:27:20,885: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-22 23:27:21,312: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 23:27:21,323: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-22 23:27:21,330: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-22 23:27:21,334: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-22 23:27:21,336: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 23:27:21,336: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 23:27:21,336: INFO: common: created directory at: artifacts]
+[2025-07-22 23:27:23,160: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 23:27:23,161: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-22 23:27:23,162: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 23:27:23,164: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 23:27:23,164: INFO: common: created directory at: artifacts]
+[2025-07-22 23:27:23,165: INFO: common: created directory at: artifacts\training]
+[2025-07-22 23:27:23,885: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-22 23:27:23,885: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-22 23:28:18,456: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 23:28:18,456: INFO: helpers: Accessing as gourav7-7]
+[2025-07-22 23:28:18,939: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-22 23:28:19,454: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-22 23:28:19,454: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-22 23:28:19,454: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-22 23:28:19,467: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-22 23:28:19,469: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 23:28:19,470: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 23:28:19,471: INFO: common: created directory at: artifacts]
+[2025-07-22 23:28:21,326: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-22 23:28:21,326: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-22 23:28:21,328: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-22 23:28:21,329: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-22 23:28:21,329: INFO: common: created directory at: artifacts]
+[2025-07-22 23:28:21,330: INFO: common: created directory at: artifacts\training]
+[2025-07-22 23:28:22,146: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-22 23:28:22,146: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-23 00:06:44,455: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-23 00:06:44,455: INFO: helpers: Accessing as gourav7-7]
+[2025-07-23 00:06:44,941: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-23 00:06:45,408: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-23 00:06:45,408: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-23 00:06:45,425: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-23 00:06:45,430: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-23 00:06:45,431: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 00:06:45,431: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 00:06:45,434: INFO: common: created directory at: artifacts]
+[2025-07-23 00:06:47,223: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-23 00:06:47,223: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-23 00:06:47,225: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 00:06:47,226: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 00:06:47,226: INFO: common: created directory at: artifacts]
+[2025-07-23 00:06:47,227: INFO: common: created directory at: artifacts\training]
+[2025-07-23 00:06:47,977: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-23 00:06:47,993: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-23 01:16:22,287: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-26 13:08:37,570: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-26 13:08:37,579: INFO: helpers: Accessing as gourav7-7]
+[2025-07-26 13:08:38,020: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-26 13:08:38,419: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-26 13:08:38,419: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-26 13:08:38,419: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-26 13:08:38,431: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-26 13:08:38,434: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-26 13:08:38,437: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-26 13:08:38,437: INFO: common: created directory at: artifacts]
+[2025-07-26 13:08:41,751: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-26 13:08:41,751: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-26 13:08:41,753: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-26 13:08:41,754: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-26 13:08:41,755: INFO: common: created directory at: artifacts]
+[2025-07-26 13:08:41,756: INFO: common: created directory at: artifacts\training]
+[2025-07-26 13:08:43,037: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-26 13:08:43,037: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-26 13:10:35,749: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-26 13:10:35,757: INFO: helpers: Accessing as gourav7-7]
+[2025-07-26 13:10:36,259: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-26 13:10:36,708: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-26 13:10:36,716: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-26 13:10:36,716: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-26 13:10:36,716: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-26 13:10:36,725: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-26 13:10:36,726: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-26 13:10:36,727: INFO: common: created directory at: artifacts]
+[2025-07-26 13:10:38,502: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-26 13:10:38,503: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-26 13:10:38,504: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-26 13:10:38,505: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-26 13:10:38,506: INFO: common: created directory at: artifacts]
+[2025-07-26 13:10:38,507: INFO: common: created directory at: artifacts\training]
+[2025-07-26 13:10:39,276: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-26 13:10:39,276: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-26 13:14:23,392: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-26 13:14:23,392: INFO: helpers: Accessing as gourav7-7]
+[2025-07-26 13:14:23,923: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-26 13:14:24,566: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-26 13:14:24,582: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-26 13:14:24,582: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-26 13:14:24,582: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-26 13:14:24,591: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-26 13:14:24,595: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-26 13:14:24,595: INFO: common: created directory at: artifacts]
+[2025-07-26 13:14:28,284: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-26 13:14:28,284: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-26 13:14:28,287: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-26 13:14:28,290: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-26 13:14:28,290: INFO: common: created directory at: artifacts]
+[2025-07-26 13:14:28,291: INFO: common: created directory at: artifacts\training]
+[2025-07-26 13:14:30,341: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-26 13:14:30,341: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-26 13:22:37,436: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-26 13:22:37,436: INFO: helpers: Accessing as gourav7-7]
+[2025-07-26 13:22:38,075: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-26 13:22:38,557: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-26 13:22:38,562: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-26 13:22:38,564: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-26 13:22:38,567: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-26 13:22:38,570: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-26 13:22:38,572: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-26 13:22:38,572: INFO: common: created directory at: artifacts]
+[2025-07-26 13:22:40,278: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-26 13:22:40,278: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-26 13:22:40,278: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-26 13:22:40,278: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-26 13:22:40,278: INFO: common: created directory at: artifacts]
+[2025-07-26 13:22:40,278: INFO: common: created directory at: artifacts\training]
+[2025-07-26 13:22:41,016: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-26 13:22:41,016: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-29 18:55:43,125: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-29 18:55:43,141: INFO: helpers: Accessing as gourav7-7]
+[2025-07-29 18:55:43,659: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-29 18:55:44,171: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-29 18:55:44,171: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-29 18:55:44,179: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-29 18:55:44,180: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-29 18:55:44,186: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-29 18:55:44,189: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-29 18:55:44,189: INFO: common: created directory at: artifacts]
+[2025-07-29 18:55:47,156: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-29 18:55:47,157: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-29 18:55:47,159: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-29 18:55:47,160: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-29 18:55:47,161: INFO: common: created directory at: artifacts]
+[2025-07-29 18:55:47,161: INFO: common: created directory at: artifacts\training]
+[2025-07-29 18:55:48,594: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-29 18:55:48,594: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-29 20:42:00,106: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-29 20:42:00,106: INFO: helpers: Accessing as gourav7-7]
+[2025-07-29 20:42:00,662: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-29 20:42:01,412: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-29 20:42:01,412: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-29 20:42:01,420: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-29 20:42:01,423: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-29 20:42:01,427: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-29 20:42:01,429: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-29 20:42:01,430: INFO: common: created directory at: artifacts]
+[2025-07-29 20:42:03,138: ERROR: main: module 'keras.api._v2.keras.optimizers.schedules' has no attribute 'ReduceLROnPlateau']
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 24, in <module>
+    prepare_base_model.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_02_model_preparation.py", line 14, in main
+    base_model.get_base_model()
+  File "d:\e2e proj\src\cnnClassifier\components\cnn_model.py", line 14, in get_base_model
+    self.model = self._build_custom_cnn()
+  File "d:\e2e proj\src\cnnClassifier\components\cnn_model.py", line 65, in _build_custom_cnn
+    lr_schedule = tf.keras.optimizers.schedules.ReduceLROnPlateau(
+AttributeError: module 'keras.api._v2.keras.optimizers.schedules' has no attribute 'ReduceLROnPlateau'
+[2025-07-29 20:49:40,784: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-29 20:49:40,802: INFO: helpers: Accessing as gourav7-7]
+[2025-07-29 20:49:41,432: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-29 20:49:42,048: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-29 20:49:42,064: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-29 20:49:42,064: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-29 20:49:42,076: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-29 20:49:42,079: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-29 20:49:42,080: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-29 20:49:42,082: INFO: common: created directory at: artifacts]
+[2025-07-29 20:49:43,896: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-29 20:49:43,896: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-29 20:49:43,912: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-29 20:49:43,913: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-29 20:49:43,914: INFO: common: created directory at: artifacts]
+[2025-07-29 20:49:43,914: INFO: common: created directory at: artifacts\training]
+[2025-07-29 20:49:44,673: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-29 20:49:44,673: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-29 21:09:13,832: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-30 21:29:33,321: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-30 21:29:33,328: INFO: helpers: Accessing as gourav7-7]
+[2025-07-30 21:29:33,963: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-30 21:29:34,598: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-30 21:29:34,600: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-30 21:29:34,602: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-30 21:29:34,608: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-30 21:29:34,611: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-30 21:29:34,615: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-30 21:29:34,615: INFO: common: created directory at: artifacts]
+[2025-07-30 21:29:36,331: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-30 21:29:36,331: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-30 21:29:36,333: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-30 21:29:36,334: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-30 21:29:36,335: INFO: common: created directory at: artifacts]
+[2025-07-30 21:29:36,335: INFO: common: created directory at: artifacts\training]
+[2025-07-30 21:29:37,107: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-07-30 21:29:37,107: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-07-30 22:23:28,246: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-31 00:26:25,437: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-31 00:26:25,443: INFO: helpers: Accessing as gourav7-7]
+[2025-07-31 00:26:25,905: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-31 00:26:26,316: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-31 00:26:26,318: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-31 00:26:26,320: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-31 00:26:26,323: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-31 00:26:26,325: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-31 00:26:26,327: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-31 00:26:26,329: INFO: common: created directory at: artifacts]
+[2025-07-31 00:26:27,448: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-31 00:26:27,450: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-31 00:26:27,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-31 00:26:27,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-31 00:26:27,454: INFO: common: created directory at: artifacts]
+[2025-07-31 00:26:27,455: INFO: common: created directory at: artifacts\training]
+[2025-07-31 00:26:28,074: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-07-31 00:26:28,074: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-07-31 00:57:19,835: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-31 00:57:19,842: INFO: helpers: Accessing as gourav7-7]
+[2025-07-31 00:57:20,330: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-31 00:57:20,733: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-31 00:57:20,736: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-31 00:57:20,737: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-31 00:57:20,742: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-31 00:57:20,743: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-31 00:57:20,745: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-31 00:57:20,746: INFO: common: created directory at: artifacts]
+[2025-07-31 00:57:22,364: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-31 00:57:22,364: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-31 00:57:22,370: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-31 00:57:22,373: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-31 00:57:22,373: INFO: common: created directory at: artifacts]
+[2025-07-31 00:57:22,375: INFO: common: created directory at: artifacts\training]
+[2025-07-31 00:57:23,513: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-07-31 00:57:23,514: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-07-31 20:17:39,212: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-31 20:17:39,228: INFO: helpers: Accessing as gourav7-7]
+[2025-07-31 20:17:39,790: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-07-31 20:17:40,278: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-07-31 20:17:40,278: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-07-31 20:17:40,292: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-07-31 20:17:40,300: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-07-31 20:17:40,304: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-31 20:17:40,306: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-31 20:17:40,308: INFO: common: created directory at: artifacts]
+[2025-07-31 20:17:41,223: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-07-31 20:17:41,223: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-07-31 20:17:41,225: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-31 20:17:41,226: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-31 20:17:41,227: INFO: common: created directory at: artifacts]
+[2025-07-31 20:17:41,227: INFO: common: created directory at: artifacts\training]
+[2025-07-31 20:17:41,739: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-07-31 20:17:41,754: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-07-31 20:45:54,250: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-08 23:07:52,646: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-08 23:07:52,655: INFO: helpers: Accessing as gourav7-7]
+[2025-08-08 23:07:53,273: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-08 23:07:53,912: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-08 23:07:53,915: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-08 23:07:53,918: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-08 23:07:53,923: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-08 23:07:53,926: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-08 23:07:53,929: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 23:07:53,930: INFO: common: created directory at: artifacts]
+[2025-08-08 23:07:55,760: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-08 23:07:55,761: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-08 23:07:55,762: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-08 23:07:55,763: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-08 23:07:55,763: INFO: common: created directory at: artifacts]
+[2025-08-08 23:07:55,764: INFO: common: created directory at: artifacts\training]
+[2025-08-08 23:07:56,332: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-08 23:07:56,332: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-16 19:35:44,616: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-16 19:35:44,632: INFO: helpers: Accessing as gourav7-7]
+[2025-08-16 19:35:45,139: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-16 19:35:45,630: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-16 19:35:45,635: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-16 19:35:45,640: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-16 19:35:45,647: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-16 19:35:45,648: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-16 19:35:45,655: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-16 19:35:45,656: INFO: common: created directory at: artifacts]
+[2025-08-16 19:35:47,542: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-16 19:35:47,542: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-16 19:35:47,544: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-16 19:35:47,545: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-16 19:35:47,545: INFO: common: created directory at: artifacts]
+[2025-08-16 19:35:47,546: INFO: common: created directory at: artifacts\training]
+[2025-08-16 19:35:48,036: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-16 19:35:48,036: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-16 19:38:32,498: ERROR: main: unsupported operand type(s) for *: 'ExponentialDecay' and 'int']
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 35, in <module>
+    training_model.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_03_model_training.py", line 36, in main
+    training.train()
+  File "d:\e2e proj\src\cnnClassifier\components\training_data.py", line 100, in train
+    history = self.model.fit(
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\utils\generic_utils.py", line 965, in update
+    self._values[k] = [v * value_base, value_base]
+TypeError: unsupported operand type(s) for *: 'ExponentialDecay' and 'int'
+[2025-08-16 19:47:29,968: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-16 19:47:29,974: INFO: helpers: Accessing as gourav7-7]
+[2025-08-16 19:47:30,455: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-16 19:47:30,965: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-16 19:47:30,982: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-16 19:47:30,986: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-16 19:47:30,991: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-16 19:47:30,993: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-16 19:47:30,993: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-16 19:47:30,995: INFO: common: created directory at: artifacts]
+[2025-08-16 19:47:31,846: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-16 19:47:31,846: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-16 19:47:31,846: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-16 19:47:31,846: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-16 19:47:31,846: INFO: common: created directory at: artifacts]
+[2025-08-16 19:47:31,846: INFO: common: created directory at: artifacts\training]
+[2025-08-16 19:47:32,345: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-16 19:47:32,345: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-16 20:07:34,254: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-16 20:07:34,262: INFO: helpers: Accessing as gourav7-7]
+[2025-08-16 20:07:34,765: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-16 20:07:35,215: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-16 20:07:35,226: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-16 20:07:35,228: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-16 20:07:35,233: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-16 20:07:35,235: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-16 20:07:35,239: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-16 20:07:35,240: INFO: common: created directory at: artifacts]
+[2025-08-16 20:07:38,663: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-16 20:07:38,663: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-16 20:07:38,665: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-16 20:07:38,667: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-16 20:07:38,669: INFO: common: created directory at: artifacts]
+[2025-08-16 20:07:38,670: INFO: common: created directory at: artifacts\training]
+[2025-08-16 20:07:39,938: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-16 20:07:39,939: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-18 22:16:33,554: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-18 22:16:33,561: INFO: helpers: Accessing as gourav7-7]
+[2025-08-18 22:16:34,150: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-18 22:16:34,586: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-18 22:16:34,602: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-18 22:16:34,602: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-18 22:16:34,614: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-18 22:16:34,616: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-18 22:16:34,620: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-18 22:16:34,621: INFO: common: created directory at: artifacts]
+[2025-08-18 22:16:37,191: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-18 22:16:37,191: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-18 22:16:37,193: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-18 22:16:37,194: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-18 22:16:37,195: INFO: common: created directory at: artifacts]
+[2025-08-18 22:16:37,195: INFO: common: created directory at: artifacts\training]
+[2025-08-18 22:16:37,738: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-18 22:16:37,738: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-18 23:17:41,907: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-19 01:23:38,077: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-19 01:23:38,082: INFO: helpers: Accessing as gourav7-7]
+[2025-08-19 01:23:38,615: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-19 01:23:39,050: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-19 01:23:39,052: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-19 01:23:39,052: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-19 01:23:39,060: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-19 01:23:39,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-19 01:23:39,122: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-19 01:23:39,122: INFO: common: created directory at: artifacts]
+[2025-08-19 01:23:43,601: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-19 01:23:43,601: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-19 01:23:43,606: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-19 01:23:43,609: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-19 01:23:43,610: INFO: common: created directory at: artifacts]
+[2025-08-19 01:23:43,611: INFO: common: created directory at: artifacts\training]
+[2025-08-19 01:23:44,495: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-19 01:23:44,496: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-22 18:21:16,752: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 18:21:16,768: INFO: helpers: Accessing as gourav7-7]
+[2025-08-22 18:21:17,295: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-22 18:21:17,712: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 18:21:17,715: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-22 18:21:17,717: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-22 18:21:17,725: INFO: main: >>>>>>>> stage Data Ingestion Stage started here <<<<<<<<]
+[2025-08-22 18:21:17,729: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 18:21:17,733: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 18:21:17,733: INFO: common: created directory at: artifacts]
+[2025-08-22 18:21:17,733: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-22 18:21:17,733: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1zsI3e2QVpuhM1hjHMlr-8lx6os6X2UQF/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-08-22 18:21:18,261: ERROR: main: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+	Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1zsI3e2QVpuhM1hjHMlr-8lx6os6X2UQF
+
+but Gdown can't. Please check connections and permissions.]
+Traceback (most recent call last):
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\gdown\download.py", line 267, in download
+    url = get_url_from_gdrive_confirmation(res.text)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\gdown\download.py", line 55, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(
+gdown.exceptions.FileURLRetrievalError: Cannot retrieve the public link of the file. You may need to change the permission to 'Anyone with the link', or have had many accesses. Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 14, in <module>
+    obj.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "d:\e2e proj\src\cnnClassifier\components\data_ingestion.py", line 32, in download_file
+    raise e
+  File "d:\e2e proj\src\cnnClassifier\components\data_ingestion.py", line 27, in download_file
+    gdown.download(prefix+file_id, zip_download_dir)
+  File "C:\Users\Gourav\AppData\Local\Programs\Python\Python310\lib\site-packages\gdown\download.py", line 278, in download
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+	Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1zsI3e2QVpuhM1hjHMlr-8lx6os6X2UQF
+
+but Gdown can't. Please check connections and permissions.
+[2025-08-22 18:23:22,128: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 18:23:22,139: INFO: helpers: Accessing as gourav7-7]
+[2025-08-22 18:23:22,767: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-22 18:23:23,245: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 18:23:23,255: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-22 18:23:23,256: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-22 18:23:23,260: INFO: main: >>>>>>>> stage Data Ingestion Stage started here <<<<<<<<]
+[2025-08-22 18:23:23,263: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 18:23:23,265: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 18:23:23,265: INFO: common: created directory at: artifacts]
+[2025-08-22 18:23:23,265: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-22 18:23:23,267: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wEHylWJRt6xTGati2pufZzWUMV8_WdoL/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-08-22 18:27:06,036: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wEHylWJRt6xTGati2pufZzWUMV8_WdoL/view?usp=sharing into file artifacts/data_ingestion/kidney-ct-scan-image.zip]
+[2025-08-22 18:27:34,088: INFO: data_ingestion: Moved Cyst to artifacts/data_ingestion/kidney-ct-scan-image\Cyst]
+[2025-08-22 18:27:34,096: INFO: data_ingestion: Moved Normal to artifacts/data_ingestion/kidney-ct-scan-image\Normal]
+[2025-08-22 18:27:34,098: INFO: data_ingestion: Moved Stone to artifacts/data_ingestion/kidney-ct-scan-image\Stone]
+[2025-08-22 18:27:34,102: INFO: data_ingestion: Moved Tumor to artifacts/data_ingestion/kidney-ct-scan-image\Tumor]
+[2025-08-22 18:27:34,102: INFO: data_ingestion: Cleaned up temporary extraction directory]
+[2025-08-22 18:27:34,106: INFO: main: >>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<
+
+X=======================================================X]
+[2025-08-22 18:27:34,106: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-22 18:27:34,112: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 18:27:34,114: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 18:27:34,115: INFO: common: created directory at: artifacts]
+[2025-08-22 18:27:37,503: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-22 18:27:37,503: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-22 18:27:37,506: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 18:27:37,508: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 18:27:37,509: INFO: common: created directory at: artifacts]
+[2025-08-22 18:27:37,510: INFO: common: created directory at: artifacts\training]
+[2025-08-22 18:27:38,423: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-22 18:27:38,424: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-22 18:46:29,732: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 18:46:29,747: INFO: helpers: Accessing as gourav7-7]
+[2025-08-22 18:46:30,328: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-22 18:46:30,879: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 18:46:30,879: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-22 18:46:30,879: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-22 18:46:30,895: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-22 18:46:30,897: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 18:46:30,898: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 18:46:30,900: INFO: common: created directory at: artifacts]
+[2025-08-22 18:46:31,953: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-22 18:46:31,953: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-22 18:46:31,955: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 18:46:31,956: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 18:46:31,957: INFO: common: created directory at: artifacts]
+[2025-08-22 18:46:31,957: INFO: common: created directory at: artifacts\training]
+[2025-08-22 18:46:32,512: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-22 18:46:32,512: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-22 19:14:08,925: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 19:14:08,935: INFO: helpers: Accessing as gourav7-7]
+[2025-08-22 19:14:09,734: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-22 19:14:10,364: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 19:14:10,367: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-22 19:14:10,367: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-22 19:14:10,379: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-22 19:14:10,383: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 19:14:10,384: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 19:14:10,385: INFO: common: created directory at: artifacts]
+[2025-08-22 19:14:11,260: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-22 19:14:11,261: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-22 19:14:11,261: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 19:14:11,264: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 19:14:11,264: INFO: common: created directory at: artifacts]
+[2025-08-22 19:14:11,264: INFO: common: created directory at: artifacts\training]
+[2025-08-22 19:14:11,823: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-22 19:14:11,824: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-22 19:20:40,122: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 19:20:40,130: INFO: helpers: Accessing as gourav7-7]
+[2025-08-22 19:20:40,764: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-22 19:20:41,404: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 19:20:41,407: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-22 19:20:41,407: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-22 19:20:41,414: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-22 19:20:41,414: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 19:20:41,420: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 19:20:41,422: INFO: common: created directory at: artifacts]
+[2025-08-22 19:20:42,194: ERROR: main: module 'keras.api._v2.keras.optimizers.schedules' has no attribute 'ReduceLROnPlateau']
+Traceback (most recent call last):
+  File "d:\E2E Proj\main.py", line 24, in <module>
+    prepare_base_model.main()
+  File "d:\e2e proj\src\cnnClassifier\pipeline\stage_02_model_preparation.py", line 14, in main
+    base_model.get_base_model()
+  File "d:\e2e proj\src\cnnClassifier\components\cnn_model.py", line 13, in get_base_model
+    self.model = self._build_custom_cnn()
+  File "d:\e2e proj\src\cnnClassifier\components\cnn_model.py", line 64, in _build_custom_cnn
+    lr_schedule = tf.keras.optimizers.schedules.ReduceLROnPlateau(
+AttributeError: module 'keras.api._v2.keras.optimizers.schedules' has no attribute 'ReduceLROnPlateau'
+[2025-08-22 19:23:18,203: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 19:23:18,205: INFO: helpers: Accessing as gourav7-7]
+[2025-08-22 19:23:18,795: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-22 19:23:19,435: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 19:23:19,435: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-22 19:23:19,443: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-22 19:23:19,447: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-22 19:23:19,450: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 19:23:19,451: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 19:23:19,452: INFO: common: created directory at: artifacts]
+[2025-08-22 19:23:20,320: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-22 19:23:20,321: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-22 19:23:20,323: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 19:23:20,324: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 19:23:20,324: INFO: common: created directory at: artifacts]
+[2025-08-22 19:23:20,325: INFO: common: created directory at: artifacts\training]
+[2025-08-22 19:23:20,853: INFO: training_data: Class counts: {0: 2968, 1: 4062, 2: 1102, 3: 1827}]
+[2025-08-22 19:23:20,854: INFO: training_data: Class weights: {0: 0.8388645552560647, 1: 0.6129369768586903, 2: 2.259301270417423, 3: 1.3627531472359058}]
+[2025-08-22 19:40:14,640: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 19:40:14,652: INFO: helpers: Accessing as gourav7-7]
+[2025-08-22 19:40:15,284: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-22 19:40:15,753: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-22 19:40:15,769: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-22 19:40:15,774: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-22 19:40:15,782: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-22 19:40:15,784: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 19:40:15,786: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 19:40:15,786: INFO: common: created directory at: artifacts]
+[2025-08-22 19:40:16,627: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-22 19:40:16,627: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-22 19:40:16,629: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-22 19:40:16,630: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-22 19:40:16,631: INFO: common: created directory at: artifacts]
+[2025-08-22 19:40:16,631: INFO: common: created directory at: artifacts\training]
+[2025-08-22 19:40:17,410: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-08-22 19:40:17,411: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-08-23 08:46:04,691: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 08:46:04,707: INFO: helpers: Accessing as gourav7-7]
+[2025-08-23 08:46:05,199: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-23 08:46:05,586: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 08:46:05,590: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-23 08:46:05,593: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-23 08:46:05,598: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-23 08:46:05,601: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 08:46:05,603: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 08:46:05,606: INFO: common: created directory at: artifacts]
+[2025-08-23 08:46:07,357: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-23 08:46:07,357: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-23 08:46:07,359: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 08:46:07,360: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 08:46:07,361: INFO: common: created directory at: artifacts]
+[2025-08-23 08:46:07,361: INFO: common: created directory at: artifacts\training]
+[2025-08-23 08:46:08,571: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-08-23 08:46:08,571: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-08-23 08:54:35,617: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 08:54:35,633: INFO: helpers: Accessing as gourav7-7]
+[2025-08-23 08:54:36,216: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-23 08:54:36,601: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 08:54:36,601: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-23 08:54:36,617: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-23 08:54:36,622: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-23 08:54:36,624: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 08:54:36,624: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 08:54:36,624: INFO: common: created directory at: artifacts]
+[2025-08-23 08:54:37,579: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-23 08:54:37,579: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-23 08:54:37,579: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 08:54:37,579: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 08:54:37,579: INFO: common: created directory at: artifacts]
+[2025-08-23 08:54:37,579: INFO: common: created directory at: artifacts\training]
+[2025-08-23 08:54:38,412: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-08-23 08:54:38,412: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-08-23 08:57:57,448: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 08:57:57,448: INFO: helpers: Accessing as gourav7-7]
+[2025-08-23 08:57:58,091: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-23 08:57:58,526: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 08:57:58,544: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-23 08:57:58,544: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-23 08:57:58,544: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-23 08:57:58,544: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 08:57:58,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 08:57:58,557: INFO: common: created directory at: artifacts]
+[2025-08-23 08:57:59,424: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-23 08:57:59,424: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-23 08:57:59,424: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 08:57:59,424: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 08:57:59,440: INFO: common: created directory at: artifacts]
+[2025-08-23 08:57:59,440: INFO: common: created directory at: artifacts\training]
+[2025-08-23 08:58:00,221: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-08-23 08:58:00,221: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-08-23 09:03:19,976: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 09:03:19,991: INFO: helpers: Accessing as gourav7-7]
+[2025-08-23 09:03:20,587: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-23 09:03:21,069: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 09:03:21,069: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-23 09:03:21,069: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-23 09:03:21,069: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-23 09:03:21,069: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 09:03:21,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 09:03:21,086: INFO: common: created directory at: artifacts]
+[2025-08-23 09:03:22,018: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-23 09:03:22,019: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-23 09:03:22,020: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 09:03:22,021: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 09:03:22,022: INFO: common: created directory at: artifacts]
+[2025-08-23 09:03:22,022: INFO: common: created directory at: artifacts\training]
+[2025-08-23 09:03:22,803: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-08-23 09:03:22,803: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-08-23 09:24:17,550: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-23 09:26:20,788: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 09:26:20,791: INFO: helpers: Accessing as gourav7-7]
+[2025-08-23 09:26:21,419: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-23 09:26:21,887: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 09:26:21,887: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-23 09:26:21,905: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-23 09:26:21,909: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-23 09:26:21,913: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 09:26:21,915: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 09:26:21,916: INFO: common: created directory at: artifacts]
+[2025-08-23 09:26:22,847: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-23 09:26:22,847: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-23 09:26:22,849: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 09:26:22,851: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 09:26:22,851: INFO: common: created directory at: artifacts]
+[2025-08-23 09:26:22,851: INFO: common: created directory at: artifacts\training]
+[2025-08-23 09:26:23,597: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-08-23 09:26:23,597: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-08-23 09:52:17,681: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-23 09:52:40,617: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 09:52:40,636: INFO: helpers: Accessing as gourav7-7]
+[2025-08-23 09:52:41,260: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-23 09:52:41,713: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-23 09:52:41,724: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-23 09:52:41,730: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-23 09:52:41,736: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-23 09:52:41,739: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 09:52:41,740: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 09:52:41,741: INFO: common: created directory at: artifacts]
+[2025-08-23 09:52:42,642: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-23 09:52:42,642: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-23 09:52:42,642: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-23 09:52:42,642: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-23 09:52:42,642: INFO: common: created directory at: artifacts]
+[2025-08-23 09:52:42,642: INFO: common: created directory at: artifacts\training]
+[2025-08-23 09:52:43,421: INFO: training_data: Class counts: {0: 3709, 1: 5077, 2: 1377, 3: 2283}]
+[2025-08-23 09:52:43,422: INFO: training_data: Class weights: {0: 0.8389053653275815, 1: 0.6128619263344495, 2: 2.259622367465505, 3: 1.3628996933858957}]
+[2025-08-24 10:10:58,057: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-24 10:10:58,073: INFO: helpers: Accessing as gourav7-7]
+[2025-08-24 10:10:58,660: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-24 10:10:59,176: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-24 10:10:59,192: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-24 10:10:59,196: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-24 10:10:59,203: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-24 10:10:59,205: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-24 10:10:59,210: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-24 10:10:59,210: INFO: common: created directory at: artifacts]
+[2025-08-24 10:11:02,194: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-24 10:11:02,194: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-24 10:11:02,196: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-24 10:11:02,197: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-24 10:11:02,198: INFO: common: created directory at: artifacts]
+[2025-08-24 10:11:02,198: INFO: common: created directory at: artifacts\training]
+[2025-08-24 10:11:03,592: INFO: training_data: Class counts: {0: 5270, 1: 5077, 2: 4568, 3: 4566}]
+[2025-08-24 10:11:03,592: INFO: training_data: Class weights: {0: 0.924146110056926, 1: 0.9592771321646641, 2: 1.066166812609457, 3: 1.066633815155497}]
+[2025-08-24 10:39:37,940: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-24 10:39:37,951: INFO: helpers: Accessing as gourav7-7]
+[2025-08-24 10:39:38,465: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-24 10:39:39,047: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-24 10:39:39,051: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-24 10:39:39,051: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-24 10:39:39,067: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-24 10:39:39,069: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-24 10:39:39,070: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-24 10:39:39,071: INFO: common: created directory at: artifacts]
+[2025-08-24 10:39:40,920: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-24 10:39:40,920: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-24 10:39:40,920: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-24 10:39:40,920: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-24 10:39:40,920: INFO: common: created directory at: artifacts]
+[2025-08-24 10:39:40,920: INFO: common: created directory at: artifacts\training]
+[2025-08-24 10:39:42,035: INFO: training_data: Class counts: {0: 5270, 1: 5077, 2: 4568, 3: 4566}]
+[2025-08-24 10:39:42,035: INFO: training_data: Class weights: {0: 0.924146110056926, 1: 0.9592771321646641, 2: 1.066166812609457, 3: 1.066633815155497}]
+[2025-08-24 11:53:37,408: INFO: main: >>>>>>>>>>>> Stage Model Training COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-25 00:41:10,885: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-25 00:41:10,895: INFO: helpers: Accessing as gourav7-7]
+[2025-08-25 00:41:11,425: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-08-25 00:41:11,903: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-08-25 00:41:11,919: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-08-25 00:41:11,924: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-08-25 00:41:11,931: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-08-25 00:41:11,933: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-25 00:41:11,937: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-25 00:41:11,941: INFO: common: created directory at: artifacts]
+[2025-08-25 00:41:14,881: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-08-25 00:41:14,882: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-08-25 00:41:14,883: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-08-25 00:41:14,884: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-08-25 00:41:14,885: INFO: common: created directory at: artifacts]
+[2025-08-25 00:41:14,885: INFO: common: created directory at: artifacts\training]
+[2025-08-25 00:41:17,160: INFO: training_data: Class counts: {0: 5270, 1: 5077, 2: 4568, 3: 4566}]
+[2025-08-25 00:41:17,161: INFO: training_data: Class weights: {0: 0.924146110056926, 1: 0.9592771321646641, 2: 1.066166812609457, 3: 1.066633815155497}]
+[2025-10-09 19:02:22,576: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-10-09 19:02:22,585: INFO: helpers: Accessing as gourav7-7]
+[2025-10-09 19:02:23,536: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/gourav7-7/E2E-Proj "HTTP/1.1 200 OK"]
+[2025-10-09 19:02:24,656: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2025-10-09 19:02:24,659: INFO: helpers: Initialized MLflow to track repo "gourav7-7/E2E-Proj"]
+[2025-10-09 19:02:24,660: INFO: helpers: Repository gourav7-7/E2E-Proj initialized!]
+[2025-10-09 19:02:24,666: INFO: main: >>>>>>>>>>>>>> Stage Model Preparation started <<<<<<<<<<<<<<]
+[2025-10-09 19:02:24,668: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-09 19:02:24,671: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-09 19:02:24,672: INFO: common: created directory at: artifacts]
+[2025-10-09 19:02:28,115: INFO: main: >>>>>>>>>>>> Stage Model Preparation COMPLETED <<<<<<<<<
+
+X=========================================================X]
+[2025-10-09 19:02:28,115: INFO: main: >>>>>>>>>>>>>> Stage Model Training started <<<<<<<<<<<<<<]
+[2025-10-09 19:02:28,117: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-10-09 19:02:28,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-09 19:02:28,119: INFO: common: created directory at: artifacts]
+[2025-10-09 19:02:28,119: INFO: common: created directory at: artifacts\training]
+[2025-10-09 19:02:30,641: INFO: training_data: Class counts: {0: 5270, 1: 5077, 2: 4568, 3: 4566}]
+[2025-10-09 19:02:30,641: INFO: training_data: Class weights: {0: 0.924146110056926, 1: 0.9592771321646641, 2: 1.066166812609457, 3: 1.066633815155497}]
